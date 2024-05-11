@@ -102,6 +102,13 @@ This section should list any major frameworks/libraries used to bootstrap your p
 !Python
 !SQL
 
+* [![JavaScript][JavaScript.js]][JavaScript-url]
+* [![HTML][HTML.js]][HTML-url]
+* [![CSS][CSS.js]][CSS-url]
+* [![Python][Python.io]][Python-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![SQL][SQL.com]][SQL-url]
+
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
