@@ -81,13 +81,18 @@
 
       <!-- Hero Area Start -->
       <div id="hero-area" class="hero-area-bg">
+	  
+		<video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+		<source src="assets/video/event.webm" type="video/mp4">
+		</video>
+	  
         <div class="overlay"></div>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-9 col-sm-12">
               <div class="contents text-center">
                 <div class="icon">
-                  <i class="lni-mic"></i>
+                  <!--<i class="lni-mic"></i>-->
                 </div>
                 <h2>YSwipe</h2>
                 <h2 class="head-title">Video Screening Job Platform</h2>
@@ -1346,16 +1351,68 @@
                 </button>
               </form>
             </div>
+			
+			<div style="float:left;">
+			<button type="button" class="base-button" style="border-radius: 25px; font-weight:bold; background-color: #ffc3a0;" onclick="showOrHideExtraPages();">Show Extra Pages</button>
+            <!--<button type="button" class="btn btn-success buttRadius" style="visibility: hidden;">Submit</button>-->
+			<div class="dropdown" id="aboutExtra" style="visibility: hidden;">
+			  <button class="dropbtn footerDropDownColor">About</button>
+			  <div class="dropdown-content">
+				<a href="#">About Us</a>
+				<a href="#">Mission</a>
+				<a href="#">Team</a>
+				<a href="#">Motivation</a>
+			  </div>
+			</div>
+			
+			<div class="dropdown" id="careersExtra" style="visibility: hidden;">
+			  <button class="dropbtn footerDropDownColor">Careers</button>
+			  <div class="dropdown-content">
+				<a href="#">Job Opportunities</a>
+				<a href="#">Research</a>
+				<a href="#">Why work with us</a>
+				<a href="#">Our Culture</a>
+			  </div>
+			</div>
+			
+			<div class="dropdown" id="privacyExtra" style="visibility: hidden;">
+			  <button class="dropbtn footerDropDownColor">Privacy</button>
+			  <div class="dropdown-content">
+				<a href="#">Copyright</a>
+				<a href="#">licence</a>
+				<a href="#">Sharing</a>
+				<a href="#">Closure</a>
+			  </div>
+			</div>
+			
+			<div class="dropdown" id="securityExtra" style="visibility: hidden;">
+			  <button class="dropbtn footerDropDownColor">Security</button>
+			  <div class="dropdown-content">
+				<a href="#">Safety</a>
+				<a href="#">Certificate</a>
+				<a href="#">Protection</a>
+				<a href="#">Standards</a>
+			  </div>
+			</div>
+			
+			</div>
+			
+			
+			
+			
             <div class="footer-logo">
               <img src="assets/img/logo.png" alt="">
             </div>
             <div class="social-icons-footer">
               <ul>
-                <li class="facebook"><a target="_blank" href="3"><i class="lni-facebook-filled"></i></a></li>
+                <li class="facebook"><a target="_blank" href="3"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li class="twitter"><a target="_blank" href="3"><i class="fa-brands fa-x-twitter"></i></a></li>
                 <li class="pinterest"><a target="_blank" href="3"><i class="fa-brands fa-linkedin-in"></i></a></li>
               </ul>
             </div>
+			
+			
+			
             <div class="site-info">
 			  <p>YSwipe © <span id="currentYear"></span> <a href="" rel="nofollow">All Rights Reserved</a></p>
             </div>
@@ -1400,13 +1457,39 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/main.js"></script>  
 
+	<script> 
+	
+    var extraPagesShown = false;
+	function showOrHideExtraPages() {
+	        if (extraPagesShown === false) {showExtraPages();}
+			else {hideExtraPages();}
+	}
+	
+    function showExtraPages() {
+            document.getElementById("aboutExtra").style.visibility = "visible";
+			document.getElementById("careersExtra").style.visibility = "visible";
+			document.getElementById("privacyExtra").style.visibility = "visible";
+			document.getElementById("securityExtra").style.visibility = "visible";
+			extraPagesShown = true;
+    }
+	
+	function hideExtraPages() {
+            document.getElementById("aboutExtra").style.visibility = "hidden";
+			document.getElementById("careersExtra").style.visibility = "hidden";
+			document.getElementById("privacyExtra").style.visibility = "hidden";
+			document.getElementById("securityExtra").style.visibility = "hidden";
+			extraPagesShown = false;
+    }
+	
+	
+	</script>
+	
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 			var currentYear = new Date().getFullYear();
 			document.getElementById('currentYear').textContent = currentYear;
 		});
 	</script>
-
-    
+	
   </body>
 </html>
