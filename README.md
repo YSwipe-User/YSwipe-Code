@@ -102,12 +102,12 @@ This section should list any major frameworks/libraries used to bootstrap your p
 !Python
 !SQL
 
-* [![JavaScript][JavaScript.js]][JavaScript-url]
-* [![HTML][HTML.js]][HTML-url]
-* [![CSS][CSS.js]][CSS-url]
-* [![Python][Python.io]][Python-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![SQL][SQL.com]][SQL-url]
+* [![JavaScript][JavaScript-Badge]][JavaScript-url]
+* [![HTML][HTML-Badge]][HTML-url]
+* [![CSS][CSS-Badge]][CSS-url]
+* [![Bootstrap][Bootstrap-Badge]][Bootstrap-url]
+* [![Python][Python-Badge]][Python-url]
+* [![SQL][SQL-Badge]][SQL-url]
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -257,6 +257,18 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
+
+[JavaScript-Badge]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[JavaScript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/
+[HTML-Badge]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/ 
+[CSS-Badge]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
+[CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS/
+[Python-Badge]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://www.python.org/
+[SQL-Badge]: https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white
+[SQL-url]: https://www.mysql.com/
+
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
