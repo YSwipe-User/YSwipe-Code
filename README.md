@@ -95,28 +95,14 @@ Here's what it offers:
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-!JavaScript
-!HTML
-!CSS
-!Bootstrap
-!Python
-!SQL
 
 * [![JavaScript][JavaScript-Badge]][JavaScript-url]
 * [![HTML][HTML-Badge]][HTML-url]
 * [![CSS][CSS-Badge]][CSS-url]
-* [![Bootstrap][Bootstrap-Badge]][Bootstrap-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![Python][Python-Badge]][Python-url]
 * [![SQL][SQL-Badge]][SQL-url]
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
