@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto:500,700");
 html {
   overflow-x: hidden;
 }
@@ -7,7 +8,8 @@ body {
   background: #fff;
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Montserrat';
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -22,7 +24,8 @@ body {
 h1, h2, h3, h4, h5 {
   font-size: 36px;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Montserrat';
 }
 
 a {
@@ -42,7 +45,8 @@ a a:focus {
 
 p {
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Montserrat';
   margin: 0px;
   font-size: 14px;
 }
@@ -192,7 +196,8 @@ ul li, ol li {
   padding: 10px 30px;
   line-height: 22px;
   border-radius: 30px;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Montserrat';
   cursor: pointer;
   font-weight: 500;
   color: #fff;
@@ -637,7 +642,8 @@ a.back-to-top:hover, a.back-to-top:focus {
   padding: 0 15px;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Montserrat';
   font-weight: 500;
   line-height: 40px;
   text-transform: uppercase;
@@ -2153,6 +2159,93 @@ footer {
   margin-bottom: 50px;
 }
 
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0; /* Position the dropdown content to the right */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #48b1bf;
+}
+
+
+
+
+
+
+/* Base button style */
+.base-button {
+	position: relative;
+	padding: 10px 20px;
+	background-color: #0074D9;
+	color: #FFFFFF;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+/* Hidden button style */
+.hidden-button {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin-left: 10px;
+	background-color: #FF4136;
+	display: none;
+}
+
+.footerDropDownColor {
+	background-color: #06beb6;
+}
+
+
+
+
+
 /* ==========================================================================
    Countdown Style Start
    ========================================================================== */
@@ -2187,7 +2280,8 @@ footer {
   border: none;
   position: relative;
   height: auto;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Montserrat';
   border-radius: 4px;
   text-align: center;
   font-weight: 400;
@@ -2202,7 +2296,8 @@ footer {
   line-height: 45px;
   font-weight: 700;
   letter-spacing: 0.3;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Montserrat';
   display: block;
   color: #fff;
   margin-bottom: 10px;
@@ -2369,10 +2464,52 @@ footer {
 /* ==========================================================================
 3. Hero Area
 ========================================================================== */
-.hero-area-bg {
-  background: url(../img/hero-area.jpg) no-repeat;
+
+
+/* video background */
+#background-video {
+  height: 1000vh;
+  width: 1000vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* page content */
+h1, h2 {
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh; 
+}
+
+h2 { font-size: 3rem; }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+      background-size: cover;
+    }
+}
+
+
+
+
+/*.hero-area-bg {
+  background: url(../video/event.webm) no-repeat;
   background-size: cover;
 }
+*/
 
 #hero-area {
   color: #fff;
