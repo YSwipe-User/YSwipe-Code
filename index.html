@@ -28,6 +28,14 @@
 
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
+	
+	<!--<video loop muted autoplay playsinline poster="">
+        <source src="https://www.gordonmac.com/wp-content/uploads/storm-1.mp4" type="video/mp4">
+        <source src="http://freshsauce.test/video/FS Website-FINAL-PRORES.mov" type="video/mov">
+    </video>-->
+	
+	
+	
       <!-- Navbar Start -->
       <!--<nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">-->
 	  <nav class="navbar navbar-expand-lg bg-inverse scrolling-navbar">
@@ -83,10 +91,11 @@
 
       <!-- Hero Area Start -->
       <div id="hero-area" class="hero-area-bg">
-	  
-		<video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-		<source src="assets/video/event.webm" type="video/mp4">
-		</video>
+	     
+		<!--Other New Video--> 
+		<!-- <video id="background-video" loop muted autoplay playsinline poster=""> -->
+		<!-- <source src="assets/video/event.webm" type="video/mp4"> -->
+		<!-- </video> -->
 	  
         <div class="overlay"></div>
         <div class="container">
@@ -101,9 +110,9 @@
                 <p class="banner-desc" style="font-family: montserrat, sans-serif; font-size: 24px"> Businesses want to know <u><strong>who</strong></u> to hire. </p>
 				<p class="banner-desc" style="font-family: montserrat, sans-serif; font-size: 24px"> Candidates want to tell their <u><strong>story</strong></u>. </p>
 				<p class="banner-desc" style="font-family: montserrat, sans-serif; font-size: 24px"> We give them that chance using profile videos. </p>
-                <div class="banner-btn">
+                <!--<div class="banner-btn">
                   <a href="#" class="btn btn-common">Watch Demo</a>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>
@@ -164,13 +173,21 @@
 
     <!-- Video Section Start -->
     <div class="ready-to-play">
-      <video id="bgvid" class="stop" loop>
+      <video id="bgvid" class="stop" loop muted autoplay playsinline poster="">
         <source src="assets/video/event.webm" type="video/mp4">
       </video>
       <div id="polina" class="video-text">
         <div class="tb-t">
             <div class="tb-c">
-              <div class="polina"><button><i class='lni-play'></i></button></div>
+			
+			  <div class="banner-btn polina">
+                  <a id="watch-demo" class="btn btn-common polina" style="color:white;">Watch Demo</a>
+                </div>
+				<br/>
+              <div class="polina">
+			  <button>
+			  <i class='lni-play'></i>
+			  </button></div>
             </div>
         </div>
       </div>
@@ -758,7 +775,7 @@
 
     <!-- Team Section Start -->
     <section id="team" class="section-padding text-center">
-      <div class="container">
+      <div class="container teamy">
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
@@ -894,12 +911,12 @@
     <!-- Team Section End -->
 
     <!-- Gallary Section Start -->
-    <section id="gallery" class="section-padding">
+    <!--<section id="gallery" class="section-padding">
       <div class="container-fluid">
 <div class="contact-block">
 
               </div>      </div>
-    </section>
+    </section>-->
     <!-- Gallary Section End -->
 
     <!-- Event Slides Section Start -->
@@ -969,83 +986,82 @@
     <!-- Event Slides Section End -->
 
     <!-- Pricing Area Start -->
-    <section id="pricing" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-header text-center">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Plans</h2>
-              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
-            <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.2s">
-              <div class="colmun-title">
-                <h5>Basic Pass</h5>
-              </div>
-              <div class="price">
-                <h2>$29</h2>
-                <span>Per Day</span>
-              </div>
-              <div class="pricing-list">
-                <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Lunch on all days</span></li>
-                  <li><i class="lni-close"></i><span class="text">Access to all areas</span></li>
-                  <li><i class="lni-close"></i><span class="text">Certificate</span></li>
-                </ul>
-              </div>
-              <a href="#" class="btn btn-common">Buy Ticket</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
-            <div class="price-block-wrapper active wow fadeInUp" data-wow-delay="0.3s">
-              <div class="colmun-title">
-                <h5>Standard Pass</h5>
-              </div>
-              <div class="price">
-                <h2>$40</h2>
-                <span>Per Day</span>
-              </div>
-              <div class="pricing-list">
-                <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Lunch on all days</span></li>
-                  <li><i class="lni-close"></i><span class="text">Access to all areas</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Certificate</span></li>
-                </ul>
-              </div>
-              <a href="#" class="btn btn-common">Buy Ticket</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xa-12 mb-3">
-            <div class="price-block-wrapper wow fadeInRight" data-wow-delay="0.4s">
-              <div class="colmun-title">
-                <h5>Premium Pass</h5>
-              </div>
-              <div class="price">
-                <h2>$68</h2>
-                <span>Per Day</span>
-              </div>
-              <div class="pricing-list">
-                <ul>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li>
-                  <li><i class="lni-close"></i><span class="text">Lunch on all days</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Access to all areas</span></li>
-                  <li><i class="lni-check-mark-circle"></i><span class="text">Certificate</span></li>
-                </ul>
-              </div>
-              <a href="#" class="btn btn-common">Buy Ticket</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- <section id="pricing" class="section-padding"> -->
+      <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-12"> -->
+            <!-- <div class="section-title-header text-center"> -->
+              <!-- <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Company Plans</h2> -->
+              <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+          <!-- <!--<div class="col-lg-6 col-md-6 col-xa-12 mb-3"> -->
+            <!-- <div class="price-block-wrapper wow fadeInLeft" data-wow-delay="0.2s"> -->
+              <!-- <div class="colmun-title"> -->
+                <!-- <h5>Basic Pass</h5> -->
+              <!-- </div> -->
+              <!-- <div class="price"> -->
+                <!-- <h2>$29</h2> -->
+                <!-- <span>Per Day</span> -->
+              <!-- </div> -->
+              <!-- <div class="pricing-list"> -->
+                <!-- <ul> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Lunch on all days</span></li> -->
+                  <!-- <li><i class="lni-close"></i><span class="text">Access to all areas</span></li> -->
+                  <!-- <li><i class="lni-close"></i><span class="text">Certificate</span></li> -->
+                <!-- </ul> -->
+              <!-- </div> -->
+              <!-- <a href="#" class="btn btn-common">Buy Plan</a> -->
+            <!-- </div> -->
+          <!-- </div>-->
+          <!-- <div class="col-lg-6 col-md-6 col-xa-12 mb-3"> -->
+            <!-- <div class="price-block-wrapper active wow fadeInUp" data-wow-delay="0.3s"> -->
+              <!-- <div class="colmun-title"> -->
+                <!-- <h5>Standard Pass</h5> -->
+              <!-- </div> -->
+              <!-- <div class="price"> -->
+                <!-- <h2>$35</h2> -->
+                <!-- <span>Per Month</span> -->
+              <!-- </div> -->
+              <!-- <div class="pricing-list"> -->
+                <!-- <ul> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Lunch on all days</span></li> -->
+                  <!-- <li><i class="lni-close"></i><span class="text">Access to all areas</span></li> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Certificate</span></li> -->
+                <!-- </ul> -->
+              <!-- </div> -->
+              <!-- <a href="#" class="btn btn-common">Buy Plan</a> -->
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-6 col-md-6 col-xa-12 mb-3"> -->
+            <!-- <div class="price-block-wrapper wow fadeInRight" data-wow-delay="0.4s"> -->
+              <!-- <div class="colmun-title"> -->
+                <!-- <h5>Premium Pass</h5> -->
+              <!-- </div> -->
+              <!-- <div class="price"> -->
+                <!-- <h2>$60</h2> -->
+                <!-- <span>Per Month</span> -->
+              <!-- </div> -->
+              <!-- <div class="pricing-list"> -->
+                <!-- <ul> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Entrance</span></li> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Coffee Break</span></li> -->
+                  <!-- <li><i class="lni-close"></i><span class="text">Lunch on all days</span></li> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Access to all areas</span></li> -->
+                  <!-- <li><i class="lni-check-mark-circle"></i><span class="text">Certificate</span></li> -->
+                <!-- </ul> -->
+              <!-- </div> -->
+              <!-- <a href="#" class="btn btn-common">Buy Plan</a> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </section> -->
     <!-- Pricing Area End -->
 
     <!-- Blog Section Start -->
@@ -1172,7 +1188,7 @@
     <!-- Sponsors Section End -->
 
     <!-- Contact Us Section -->
-    <section id="contact-map" class="section-padding">
+    <section id="contact-map" class="section-padding contacty">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -1269,7 +1285,7 @@
     </section>
     <!-- Contact text End -->
 
-    <footer style="background-color:black;">
+    <footer style="background-color:black;" class="footery">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-12 col-xs-12">
@@ -1414,6 +1430,24 @@
 	
 	
 	</script>
+	
+	<script>
+        var playing = false;
+        var video = document.querySelector("#bgvid");
+        var button = document.querySelector("#watch-demo");
+
+        button.addEventListener("click", () => {
+            if (!playing) {
+                video.play();
+                playing = true;
+                button.textContent = "Pause Video";
+            } else {
+                video.pause();
+                playing = false;
+                button.textContent = "Play Video";
+            }
+        });
+    </script>
 	
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
