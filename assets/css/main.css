@@ -5,6 +5,8 @@ html {
 }
 
 body {
+  margin:0;
+  
   background: #fff;
   font-size: 15px;
   font-weight: 400;
@@ -504,6 +506,11 @@ a.back-to-top:hover, a.back-to-top:focus {
   }
 }
 
+.teamy {
+  position: relative;
+  z-index: 999;
+}
+
 .section-padding {
   padding: 60px 0;
 }
@@ -742,6 +749,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .navbar {
   padding: 0;
+  z-index: 999; 
 }
 
 .navbar li.active a.nav-link {
@@ -1058,6 +1066,36 @@ video {
   transition: 1s opacity;
 }
 
+
+
+/*New Video Backround*/
+/* header { */
+ /* position: relative; */
+ /* height: 100vh; */
+ /* min-height: 100%; */
+ /* width: 100%; */
+ /* background-size: cover !important; */
+ /* -webkit-background-size: cover !important; */
+ /* text-align: center; */
+ /* overflow: hidden; */
+    /* z-index:-99; */
+/* } */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ 
+
 .stop {
   opacity: 1;
 }
@@ -1138,6 +1176,7 @@ h1 {
   padding: 80px 0;
   background-size: cover;
   background-attachment: relative;
+  z-index: 999; /*New z-index to show the screen on the video */
   position: relative;
 }
 
@@ -1932,7 +1971,12 @@ h1 {
   transform: scale(1.1);
 }
 
-/* Conact Home Page Section */
+/* Contact Home Page Section */
+.contacty {
+  position:relative;
+  z-index: 999;
+}
+
 .contact {
   background: #111111;
 }
@@ -1981,6 +2025,7 @@ h1 {
 /* Contact Forme */
 #google-map-area {
   position: relative;
+  z-index: 999;
 }
 
 #google-map-area .container-fluid {
@@ -2117,9 +2162,12 @@ h1 {
 }
 
 /* Footer Area Start */
+
 footer {
   background: #161E26;
   text-align: center;
+  position: relative;
+  z-index: 999;
 }
 
 .site-info {
@@ -2438,6 +2486,7 @@ footer {
 #pricing {
   background: #f8fafa;
   position: relative;
+  background-color: #151515;
 }
 
 #pricing .price-block-wrapper {
@@ -2445,7 +2494,7 @@ footer {
   width: 100%;
   text-align: center;
   box-shadow: 0 8px 24px #E2E8ED;
-  border-radius: 4px;
+  border-radius: 50px;
   background: #fff;
   padding: 50px 40px;
   -webkit-transition: all 300ms ease-in-out;
@@ -2620,11 +2669,11 @@ h2 { font-size: 3rem; }
 
 
 
-/*.hero-area-bg {
+.hero-area-bg {
   background: url(../video/event.webm) no-repeat;
   background-size: cover;
 }
-*/
+
 
 #hero-area {	
   color: #fff;
@@ -2638,15 +2687,17 @@ h2 { font-size: 3rem; }
   height: 100%;
   top: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.7);
+  #background: rgba(0, 0, 0, 0.7);
 }
 
 #hero-area .contents {
   padding: 160px 20px 180px;
+  z-index: 999; 
 }
 
 #hero-area .contents .icon {
   margin-bottom: 30px;
+  z-index: 999; 
 }
 
 #hero-area .contents .icon i {
@@ -2655,6 +2706,7 @@ h2 { font-size: 3rem; }
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-size: 50px;
+  z-index: 999; 
 }
 
 #hero-area .contents .banner-info {
@@ -2663,6 +2715,7 @@ h2 { font-size: 3rem; }
   margin-bottom: 22px;
   line-height: 24px;
   color: #fff;
+  z-index: 999; 
 }
 
 #hero-area .contents .head-title {
@@ -2672,6 +2725,7 @@ h2 { font-size: 3rem; }
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 22px;
+  z-index: 999; 
 }
 
 #hero-area .contents .banner-desc {
@@ -2681,6 +2735,8 @@ h2 { font-size: 3rem; }
   line-height: 30px;
   margin-bottom: 30px;
   padding: 0px 70px;
+  position: relative;
+  z-index: 999; 
 }
 
 #hero-area .contents .btn {
@@ -2688,4 +2744,5 @@ h2 { font-size: 3rem; }
   font-size: 16px;
   padding: 12px 40px;
   text-transform: uppercase;
+  z-index: 999; 
 }
