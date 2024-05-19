@@ -920,6 +920,40 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #about {
   background: #F6F9F9;
+  font-family: 'Montserrat';
+  position: relative;
+  z-index: 999;
+}
+
+#moreAbout {
+  font-family: 'Montserrat';
+  position: relative;
+  z-index: 999;
+}
+
+.lettersButton {
+  background-color: white; 
+  color: black; 
+  font-size: 16px; 
+  font-weight: 400; 
+  border: 1px solid black; 
+  border-radius: 50px;
+  /* font-family: futura-lt-w01-light,sans-serif; */
+}
+
+.badge-sm {
+    min-width: 1.8em;
+    padding: .25em !important;
+    margin-left: .1em;
+    margin-right: .1em;
+    color: black !important;
+    cursor: pointer;
+}
+
+.lettersButton:hover {
+  background-color: grey; 
+  cursor: pointer;
+  border-color: white;
 }
 
 .about-content {
@@ -1719,6 +1753,7 @@ h1 {
   padding: 15px;
   border-radius: 50px;
   position: relative;
+  background-color: #151515;
   box-shadow: 0 8px 24px #E2E8ED;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -2335,6 +2370,15 @@ footer {
   border: none;
 }
 
+.dropbtnP {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+}
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
@@ -2485,8 +2529,9 @@ footer {
 /* Pricing Ticket */
 #pricing {
   background: #f8fafa;
-  position: relative;
   background-color: #151515;
+  position: relative;
+  z-index: 999;
 }
 
 #pricing .price-block-wrapper {
