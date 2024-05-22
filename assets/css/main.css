@@ -2780,8 +2780,6 @@ h2 { font-size: 3rem; }
   line-height: 30px;
   margin-bottom: 30px;
   padding: 0px 70px;
-  position: relative;
-  z-index: 999; 
 }
 
 #hero-area .contents .btn {
@@ -2789,5 +2787,17 @@ h2 { font-size: 3rem; }
   font-size: 16px;
   padding: 12px 40px;
   text-transform: uppercase;
+  z-index: 999; 
+}
+
+
+
+
+
+/* Fading effect for the three introductory paragraphs */
+.firstFade, .secondFade, .thirdFade {
+  visibility: hidden;
+  /* display: none; */
+  position: relative;
   z-index: 999; 
 }
