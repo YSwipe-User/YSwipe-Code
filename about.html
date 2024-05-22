@@ -1510,6 +1510,50 @@
         });
     </script>
 	
+	
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		// Hide the .firstFade element initially
+		<!-- document.querySelector(".firstFade").style.display = "none"; -->
+		document.querySelector(".firstFade").style.visibility = "hidden";
+		document.querySelector(".secondFade").style.visibility = "hidden";
+		document.querySelector(".thirdFade").style.visibility = "hidden";
+
+		// Wait for 2000 milliseconds (2 seconds)
+		setTimeout(function() {
+		  // Show the .firstFade element
+		  <!-- document.querySelector(".firstFade").style.display = "block"; -->
+		  document.querySelector(".firstFade").style.visibility = "visible";
+		}, 2000);
+		setTimeout(function() {
+		  // Show the .firstFade element
+		  <!-- document.querySelector(".firstFade").style.display = "block"; -->
+		  document.querySelector(".secondFade").style.visibility = "visible";
+		}, 3000);
+		setTimeout(function() {
+		  // Show the .firstFade element
+		  <!-- document.querySelector(".firstFade").style.display = "block"; -->
+		  document.querySelector(".thirdFade").style.visibility = "visible";
+		}, 4000);
+		
+	  });
+
+	  $(function() {
+		// Hide the elements initially
+		<!-- $(".firstFade, .secondFade, .thirdFade").hide(); -->
+
+		// Fade them in sequentially
+		$(".firstFade").fadeIn(3000, function() {
+		document.querySelector(".secondFade").style.visibility = "visible";
+		  $(".secondFade").fadeIn(4000, function() {
+		  document.querySelector(".thirdFade").style.visibility = "visible";
+			$(".thirdFade").fadeIn(5000);
+		  });
+		});
+	  });
+</script>
+	
+	
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
 			var currentYear = new Date().getFullYear();

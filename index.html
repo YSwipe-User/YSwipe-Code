@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 	
 	<script src="https://kit.fontawesome.com/53e90ec8ae.js" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   </head>
   <body>
@@ -99,6 +101,7 @@
       </nav>
       <!-- Navbar End -->
 
+
       <!-- Hero Area Start -->
       <div id="hero-area" class="hero-area-bg">
 	     
@@ -117,9 +120,9 @@
                 </div>
                 <!--<h2>YSwipe</h2>-->
                 <!--<h2 class="head-title">Video Screening Job Platform</h2>-->
-                <p class="banner-desc" style="font-family: montserrat, sans-serif; font-size: 24px"> Businesses want to know <u><strong>who</strong></u> to hire. </p>
-				<p class="banner-desc" style="font-family: montserrat, sans-serif; font-size: 24px"> Candidates want to tell their <u><strong>story</strong></u>. </p>
-				<p class="banner-desc" style="font-family: montserrat, sans-serif; font-size: 24px"> We give them that chance using profile videos. </p>
+                <p class="banner-desc firstFade" style="font-family: montserrat, sans-serif; font-size: 24px"> Businesses want to know <u><strong>who</strong></u> to hire. </p>
+				<p class="banner-desc secondFade" style="font-family: montserrat, sans-serif; font-size: 24px"> Candidates want to tell their <u><strong>story</strong></u>. </p>
+				<p class="banner-desc thirdFade" style="font-family: montserrat, sans-serif; font-size: 24px"> We give them that chance using profile videos. </p>
                 <!--<div class="banner-btn">
                   <a href="#" class="btn btn-common">Watch Demo</a>
                 </div>-->
@@ -1437,6 +1440,54 @@
             }
         });
     </script>
+	
+	
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		// Hide the .firstFade element initially
+		<!-- document.querySelector(".firstFade").style.display = "none"; -->
+		document.querySelector(".firstFade").style.visibility = "hidden";
+		document.querySelector(".secondFade").style.visibility = "hidden";
+		document.querySelector(".thirdFade").style.visibility = "hidden";
+
+		// Wait for 2000 milliseconds (2 seconds)
+		setTimeout(function() {
+		  // Show the .firstFade element
+		  <!-- document.querySelector(".firstFade").style.display = "block"; -->
+		  document.querySelector(".firstFade").style.visibility = "visible";
+		}, 2000);
+		setTimeout(function() {
+		  // Show the .firstFade element
+		  <!-- document.querySelector(".firstFade").style.display = "block"; -->
+		  document.querySelector(".secondFade").style.visibility = "visible";
+		}, 3000);
+		setTimeout(function() {
+		  // Show the .firstFade element
+		  <!-- document.querySelector(".firstFade").style.display = "block"; -->
+		  document.querySelector(".thirdFade").style.visibility = "visible";
+		}, 4000);
+		
+	  });
+
+	  $(function() {
+		// Hide the elements initially
+		<!-- $(".firstFade, .secondFade, .thirdFade").hide(); -->
+
+		// Fade them in sequentially
+		$(".firstFade").fadeIn(3000, function() {
+		document.querySelector(".secondFade").style.visibility = "visible";
+		  $(".secondFade").fadeIn(4000, function() {
+		  document.querySelector(".thirdFade").style.visibility = "visible";
+			$(".thirdFade").fadeIn(5000);
+		  });
+		});
+	  });
+</script>
+
+
+
+
+	
 	
 	<script>
 		document.addEventListener('DOMContentLoaded', function() {
