@@ -861,7 +861,12 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) { */
+@media (min-width: 320px) and (max-width: 991px) {
+  /* Adjust to make all the navbar area black */
+  #header-wrap {
+      background-color: black !important;
+  }	  
   .logoColor {
 	  background-color: black;
   }
@@ -2800,4 +2805,16 @@ h2 { font-size: 3rem; }
   /* display: none; */
   position: relative;
   z-index: 999; 
+}
+
+
+
+.borderNav {
+  border: 1px solid black !important;
+  border-radius: 50px !important;
+}
+
+.borderNav:hover {
+  background-color: black !important;
+  color: white !important;  
 }
