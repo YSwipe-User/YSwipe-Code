@@ -45,13 +45,32 @@ img {
 }
 
 
+.smallVideoBorder {
+  border: 2px solid powderblue;
+  border-radius: 50px;
+}
 
 
 /* Footer Area Start */
 footer {
   background: #161E26;
   text-align: center;
+  width: 100vw;
 }
+
+<!-- footer { -->
+    <!-- background: #161E26; -->
+	<!-- text-align: center; -->
+    <!-- width: 100%; -->
+    <!-- min-height: 5%; -->
+    <!-- display: flex; -->
+    <!-- position: absolute; -->
+    <!-- margin: 30px 0 0 -10px; -->
+    <!-- padding: 10px; -->
+    <!-- color: white; -->
+    <!-- font-weight: bold; -->
+	
+<!-- } -->
 
 .site-info {
   position: relative;
@@ -311,6 +330,127 @@ footer {
     clear:both
 }
 
+
+@media (min-width: 320px) and (max-width: 320px) {
+  /* Your styles for devices with a width of 320px go here */
+  .videoS {
+        width: 100px; /* Set the video width to 100% of its container */
+        max-width: 800px; /* Limit the maximum width for larger screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+	
+	.footer {
+	   width: 100vw;
+	}
+	
+	.video_on_the_left {
+	   width: 50%;
+	   margin-right:2%;
+	   margin-left: 15%;
+       float: left;
+	}
+	
+	.video_on_the_left video{
+       width: 100%;
+	   margin-left: -12%;
+    }
+	
+	.rating {
+	   width: 6rem;
+	   height: 6rem;
+	}
+	
+	.ratingFontSize {
+	   font-size: 12px;
+	}
+	
+	.displayRecordSmall {
+	  display: block;
+	}
+	
+}
+
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width: 321px) and (max-device-width: 660px) {
+    /* Styles for smartphones */
+	.videoS {
+        width: 100px; /* Set the video width to 100% of its container */
+        max-width: 800px; /* Limit the maximum width for larger screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+	.buttonS {
+	    margin-top: 15px;
+	}
+	.videosDiv {
+	    margin-top: 40px;
+	}
+	
+	.footer {
+	   width: 100vw;
+	}
+	
+	.video_on_the_left {
+	   width: 50%;
+	   margin-right:2%;
+	   margin-left: 15%;
+       float: left;
+	}
+	
+	.video_on_the_left video{
+       width: 100%;
+	   margin-left: -12%;
+    }
+	
+	.rating {
+	   width: 6rem;
+	   height: 6rem;
+	}
+	
+	.ratingFontSize {
+	   font-size: 12px;
+	}
+	
+	.displayRecordSmall {
+	  display: none;
+	}
+	
+	
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles for tablets */
+    .videoS {
+        width: 100px; /* Set the video width to 100% of its container */
+        max-width: 800px; /* Limit the maximum width for larger screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+	.buttonS {
+	    margin-top: 55px;
+	}
+	
+	.footer {
+	  width: 100vw;
+	}
+	
+	.video_on_the_left {
+	   width: 50%;
+	   margin-right:2%;
+	   margin-left: 30%;
+       float: left;
+	}
+	.video_on_the_left video{
+       width: 100%;
+	   margin-left: -22%;
+    }
+	
+	.displayRecordSmall {
+	  display: none;
+	}
+	
+}
+
 	
 </style>
 
@@ -318,36 +458,80 @@ footer {
 </head>
 
 <body>
+
     
+	<div class="score_on_the_right">
 	<a href="index.html"><img class="imgA1" src="assets/img/logoYSwipe-removebgOldB.png" alt="YSwipe"/></a>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	
+	<div class="videosDiv"> 
+	<video width="170" height="120" controls class="smallVideoBorder videoS">
+	<source src="assets/video/event.webm" type="video/mp4">
+	</video>
+	</br>
+	<video width="170" height="120" controls class="smallVideoBorder videoS">
+	<source src="assets/video/event.webm" type="video/mp4">
+	</video>
+	</br>
+	<video width="170" height="120" controls class="smallVideoBorder videoS">
+	<source src="assets/video/event.webm" type="video/mp4">
+	</video>
+	</br>
+	</br>
+	</div>
+	
+	<div class="dropdown">
+	  <button class="btn btn-primary dropdown-toggle buttonS" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right:40px; border-radius:50px;">
+		Choose Video
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+		<li><a class="dropdown-item" href="#">First Video</a></li>
+		<li><a class="dropdown-item" href="#">Second Video</a></li>
+		<li><a class="dropdown-item" href="#">Third Video</a></li>
+	  </ul>
+	</div>
+
+    <!-- </br> -->
+    <!-- <div class="container text-center displayRecordSmall"> -->
+            <!-- <button type="button" id="recbutton" class="btn btn-primary buttRadius" onclick="recordStart();" ><i class="fa-solid fa-video"></i>&nbsp;</button> -->
+            <!-- <button type="button" id="stopbutton" class="btn btn-danger buttRadius" style="visibility: hidden;" onclick="recordStop();"><i class="fa-solid fa-video-slash"></i>&nbsp; Stop</button> -->
+            <!-- <button type="button" id="submitbutton" class="btn btn-success buttRadius" style="visibility: hidden;" onclick="submitRecording();"><i class="fa-solid fa-check"></i>&nbsp; Submit</button> -->
+		  <!-- <p id="recMessage" style="float: right; font-family: 'Montserrat'; font-size: 14px; font-weight: bold; color: red; margin-top: 10px;"></p> -->
+    <!-- </div> -->
+	
+	</div>
 	
 	</br>
 	</br>
-	
-	
 	
 	<div class="video_on_the_left">
       <video autoplay playsinline webkit-playsinline muted class="videoBorder" id="videoelement"
             style="max-width: 100%;height: auto;"></video>
 </div>
 <div class="score_on_the_right">
-      <h6 style="font-family: 'Montserrat'; color:white;">Communication</h6>
+      <h6 style="font-family: 'Montserrat'; color:white;" class="ratingFontSize">Communication</h6>
       <div class="rating ">87%</div>
 	  </br>
-	  <h6 style="font-family: 'Montserrat'; color:white;">Aptitude</h6>
+	  <h6 style="font-family: 'Montserrat'; color:white;" class="ratingFontSize">Aptitude</h6>
 	  <div class="rating ">66%</div>
 	  </br>
-	  <h6 style="font-family: 'Montserrat'; color: white;">Skills</h6>
+	  <h6 style="font-family: 'Montserrat'; color: white;" class="ratingFontSize">Skills</h6>
 	  <div class="rating ">58%</div>
 	  </br>
-	  <h6 style="font-family: 'Montserrat'; color: white;">Collaboration</h6>
+	  <h6 style="font-family: 'Montserrat'; color: white;" class="ratingFontSize">Collaboration</h6>
 	  <div class="rating ">75%</div>
 </div>
 <div class="clearfix"></div>
 	
 
     
-	<div class="container text-center">
+	<div class="container text-center divUp">
             <button type="button" id="recbutton" class="btn btn-primary buttRadius" onclick="recordStart();"><i class="fa-solid fa-video"></i>&nbsp; Record</button>
             <button type="button" id="stopbutton" class="btn btn-danger buttRadius" style="visibility: hidden;" onclick="recordStop();"><i class="fa-solid fa-video-slash"></i>&nbsp; Stop</button>
             <button type="button" id="submitbutton" class="btn btn-success buttRadius" style="visibility: hidden;" onclick="submitRecording();"><i class="fa-solid fa-check"></i>&nbsp; Submit</button>
@@ -359,8 +543,8 @@ footer {
 	
 	
 
-
-	<footer>
+    <!-- <div class="container-fluid"> -->
+	<footer class="footer-section container-fluid">
         
             <div class="social-icons-footer">
               <ul>
@@ -380,7 +564,7 @@ footer {
           
      
     </footer>
-		
+	<!-- </div>	 -->
 	
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
