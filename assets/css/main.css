@@ -109,7 +109,7 @@ ul li, ol li {
 
 .section-title {
   font-size: 30px;
-  color: white;
+  color: black;
   line-height: 52px;
   font-weight: 700;
   text-align: center;
@@ -2817,4 +2817,20 @@ h2 { font-size: 3rem; }
 .borderNav:hover {
   background-color: black !important;
   color: white !important;  
+}
+
+
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: black;
+}
+
+textarea {
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
 }
