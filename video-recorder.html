@@ -331,6 +331,8 @@ footer {
 }
 
 
+
+
 @media (min-width: 320px) and (max-width: 320px) {
   /* Your styles for devices with a width of 320px go here */
   .videoS {
@@ -367,6 +369,10 @@ footer {
 	.displayRecordSmall {
 	  display: block;
 	}
+	
+	.reduceSize {
+	  width: 25px;
+    }
 	
 }
 
@@ -415,6 +421,14 @@ footer {
 	  display: none;
 	}
 	
+	.reduceSize {
+	  width: 35px;
+    }
+	
+	<!-- .increaseSize { -->
+	  <!-- width: 100px; -->
+	  <!-- height: 100px; -->
+	<!-- } -->
 	
 }
 
@@ -451,6 +465,15 @@ footer {
 	
 }
 
+/* Laptops and above */
+@media screen and (min-device-width: 1200px) {
+    /* Your styles go here */
+ .moveRight {
+   margin-left: 180px;
+ }
+ 
+}
+
 	
 </style>
 
@@ -461,7 +484,7 @@ footer {
 
     
 	<div class="score_on_the_right">
-	<a href="index.html"><img class="imgA1" src="assets/img/logoYSwipe-removebgOldB.png" alt="YSwipe"/></a>
+	<a href="index.html"><img class="imgA1 reduceSize" src="assets/img/logoYSwipe-removebgOldB.png" alt="YSwipe"/></a>
 	</br>
 	</br>
 	</br>
@@ -510,10 +533,14 @@ footer {
 	</br>
 	</br>
 	
-	<div class="video_on_the_left">
-      <video autoplay playsinline webkit-playsinline muted class="videoBorder" id="videoelement"
-            style="max-width: 100%;height: auto;"></video>
+
+<div class="video_on_the_left">
+  <!-- In the video: style="max-width: 100%;height: auto;" -->
+  <video autoplay playsinline webkit-playsinline muted class="videoBorder increaseSize" id="videoelement" style="max-width: 100%;height: auto;"
+		></video>
 </div>
+
+
 <div class="score_on_the_right">
       <h6 style="font-family: 'Montserrat'; color:white;" class="ratingFontSize">Communication</h6>
       <div class="rating ">87%</div>
@@ -531,7 +558,7 @@ footer {
 	
 
     
-	<div class="container text-center divUp">
+	<div class="container text-center divUp moveRight">
             <button type="button" id="recbutton" class="btn btn-primary buttRadius" onclick="recordStart();"><i class="fa-solid fa-video"></i>&nbsp; Record</button>
             <button type="button" id="stopbutton" class="btn btn-danger buttRadius" style="visibility: hidden;" onclick="recordStop();"><i class="fa-solid fa-video-slash"></i>&nbsp; Stop</button>
             <button type="button" id="submitbutton" class="btn btn-success buttRadius" style="visibility: hidden;" onclick="submitRecording();"><i class="fa-solid fa-check"></i>&nbsp; Submit</button>
@@ -557,7 +584,7 @@ footer {
 			
 			
             <div class="site-info">
-			  <p>YSwipe © <span id="currentYear"></span> <a href="" rel="nofollow">All Rights Reserved</a></p>
+			  <p>YSwipe © <span id="currentYear"></span> <a href="" rel="nofollow"></a></p>
             </div>
 			
 			
