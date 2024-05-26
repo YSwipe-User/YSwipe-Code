@@ -812,7 +812,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   -moz-animation: fadeIn 0.4s;
   -o-animation: fadeIn 0.4s;
   -ms-animation: fadeIn 0.4s;
-  background: #f5f5f5;
+  background: black;
 }
 
 .dropdown .dropdown-menu .dropdown-item {
@@ -2328,6 +2328,10 @@ footer {
   right: 0;
 }
 
+.sub-padding {
+  padding: 10000px;
+}
+
 .subscribe-inner .sub-btn i {
   margin-right: 5px;
 }
@@ -2368,7 +2372,15 @@ footer {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: green;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtnE {
+  background-color: white;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -2376,7 +2388,7 @@ footer {
 }
 
 .dropbtnP {
-  background-color: #04AA6D;
+  background-color: black;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -2394,7 +2406,17 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0; /* Position the dropdown content to the right */
+}
+
+.dropdown-contentE {
+  display: none;
+  position: absolute;
+  background-color: #212121;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -2409,9 +2431,21 @@ footer {
   display: block;
 }
 
+.dropdown-contentE a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: black;
+}
+
+.dropdown-contentE a:hover {
+  background-color: white;
+  color: black;
 }
 
 /* Show the dropdown menu on hover */
@@ -2419,9 +2453,17 @@ footer {
   display: block;
 }
 
+.dropdown:hover .dropdown-contentE {
+  display: block;
+}
+
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #48b1bf;
+  background-color: black;
+}
+
+.dropdownE:hover .dropbtnE {
+  background-color: red;
 }
 
 
@@ -2451,7 +2493,11 @@ footer {
 }
 
 .footerDropDownColor {
-	background-color: #06beb6;
+	background-color: black;
+}
+
+.footerDropDownColorE {
+	background-color: black;
 }
 
 
