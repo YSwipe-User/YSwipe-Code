@@ -890,6 +890,16 @@ a.back-to-top:hover, a.back-to-top:focus {
     color: #212121;
   }
   
+  .smallButtonPadding {
+   padding: 0.5em; 
+   padding-left: 1em; 
+   padding-right: 1em;
+  }
+
+ .smallerButtonPadding {
+   padding: 0.5em;
+  }
+  
 }
 
 @media (max-width: 991px) {
@@ -2891,7 +2901,9 @@ h2 { font-size: 3rem; }
 
 
 
-
+/* @media (min-width: 320px) and (max-width: 1023px) { */
+	
+/* } */
 
 @media (min-width: 1024px) and (max-width: 1024px) {
   .smallButtonPadding {
