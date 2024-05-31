@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <!-- Coding by CodingLab | www.codinglabweb.com-->
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Login or Register </title>
-		<link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+<html lang="en">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
-		
-		<!-- Icon -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login or Register </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icon -->
     <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
     <!-- Nivo Lightbox -->
-    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
     <!-- Animate -->
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-                
-        <!-- Boxicons CSS -->
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-         
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
     <script src="https://kit.fontawesome.com/53e90ec8ae.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-	
-	    <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
-         <div class="container containerC" >
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"><img src="assets/img/YSwipe-Clear-White-Logo-black-background.jpeg" alt=""></a>       
-         </div>
+</head>
+
+<body>
+    <div class="main-div-container" style="height:100vh; background-color: black;">
+
+
+        <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar height:10vh;">
+            <div class="container containerC">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a href="index.html" class="navbar-brand"><img
+                        src="assets/img/YSwipe-Clear-White-Logo-black-background.jpeg" alt=""></a>
+            </div>
         </nav>
-	  
+
         <section class="container forms">
-		
+
             <div class="form login">
                 <div class="form-content">
                     <header>Login</header>
@@ -83,20 +88,19 @@
 
             </div>
 
-            <!-- Signup Form -->
 
             <div class="form signup">
                 <div class="form-content">
-                    <header>Join</header>
+                    <header>Join For Free</header>
                     <form action="#">
-					    <div class="field input-field">
+                        <div class="field input-field">
                             <input type="text" placeholder="Name" class="input">
-                        </div> 
-						
-						<div class="field input-field">
+                        </div>
+
+                        <div class="field input-field">
                             <input type="text" placeholder="Bussiness Name" class="input">
                         </div>
-						 
+
                         <div class="field input-field">
                             <input type="email" placeholder="Email" class="input">
                         </div>
@@ -134,37 +138,33 @@
 
             </div>
         </section>
-		
-		
-	<footer class="footerTopMargin">
-        
-            <div class="social-icons-footer">
-              <ul>
-                <li class="facebook"><a target="_blank" href="3"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li class="twitter"><a target="_blank" href="3"><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li class="pinterest"><a target="_blank" href="3"><i class="fa-brands fa-linkedin-in"></i></a></li>
-              </ul>
-            </div>
-			
-			
-			
-            <div class="site-info">
-			  <p>YSwipe © <span id="currentYear"></span> <a href="" rel="nofollow"></a></p>
-            </div>
-			
-			
-          
-     
-    </footer>
-		
 
-        <!-- JavaScript -->
-        <script src="js/script.js"></script>
-		<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			var currentYear = new Date().getFullYear();
-			document.getElementById('currentYear').textContent = currentYear;
-		});
-	</script>
-    </body>
+        <footer class="footerTopMargin" style=" display:block; background-color: black; height:10vh">
+
+            <div class="social-icons-footer">
+                <ul>
+                    <li class="facebook"><a target="_blank" href="3"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="twitter"><a target="_blank" href="3"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li class="pinterest"><a target="_blank" href="3"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="site-info">
+                <p>YSwipe © <span id="currentYear"></span> <a href="" rel="nofollow"></a></p>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        });
+    </script>
+</body>
+
 </html>
