@@ -2900,11 +2900,11 @@ h2 {
   animation: fadeIn 2.5s ease-in-out 1.8s forwards; /* Animation duration and delay for the first element */
 }
 .secondFade {
-  animation: fadeIn 5s ease-in-out 1.8s forwards; /* Animation duration and delay for the second element */
+  animation: fadeIn 2.5s ease-in-out 3.6s forwards; /* Animation duration and delay for the second element */
 }
 
 .thirdFade {
-  animation: fadeIn 7.5s ease-in-out 1.8s forwards; /* Animation duration and delay for the third element */
+  animation: fadeIn 2.5s ease-in-out 5.4s forwards; /* Animation duration and delay for the third element */
 }
 
 .borderNav {
