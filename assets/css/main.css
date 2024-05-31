@@ -202,7 +202,7 @@ ol li {
 .btn {
   font-size: 14px;
   padding: 10px 30px;
-  line-height: 22px;
+  /* line-height: 10px; */
   border-radius: 30px;
   /*font-family: 'Roboto', sans-serif;*/
   font-family: "Montserrat";
@@ -279,6 +279,11 @@ ol li {
 
 button:focus {
   outline: none !important;
+}
+
+.ladda-label {
+  font-size: 20px;
+  padding-bottom: 0;
 }
 
 .icon-close,
@@ -677,7 +682,7 @@ a.back-to-top:focus {
   /*font-family: 'Roboto', sans-serif;*/
   font-family: "Montserrat";
   font-weight: 500;
-  line-height: 40px;
+  /* line-height: 40px; */
   text-transform: uppercase;
   background: transparent;
   -webkit-transition: all 0.3s ease-in-out;
@@ -695,7 +700,6 @@ a.back-to-top:focus {
   /*font-family: 'Roboto', sans-serif;*/
   font-family: "Montserrat";
   font-weight: 500;
-  line-height: 40px;
   text-transform: uppercase;
   background: transparent;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2250,7 +2254,7 @@ footer {
 
 .site-info {
   position: relative;
-  padding: 30px 0;
+  padding: 0;
 }
 
 .site-info p {
@@ -2362,7 +2366,7 @@ footer {
   padding: auto;
   border-radius: 30px;
   min-width: 12rem;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   border: none;
   bottom: 0;
@@ -2906,6 +2910,9 @@ h2 {
 .borderNav {
   border: 1px solid black !important;
   border-radius: 50px !important;
+  /* height: 25px; */
+  justify-content: center;
+  /* padding-top: 15px; */
 }
 
 .borderNav:hover {
