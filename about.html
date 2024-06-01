@@ -1356,12 +1356,12 @@
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" rows="4" id="message" name="message" required
-                        data-error="Write your message"></textarea>
+                      <textarea class="form-control form-message" rows="4" id="message" name="message"
+                        placeholder="Write your message" required data-error="Write your message"></textarea>
                     </div>
                     <div class="form-submit">
-                      <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane"
-                          aria-hidden="true"></i> Send Message</button>
+                      <button type="submit" class="btn btn-common btn-submit-black" id="form-submit"><i
+                          class="fa fa-paper-plane" aria-hidden="true"></i> Send Message</button>
                       <div id="msgSubmit" class="h3 text-center hidden"></div>
                     </div>
                   </div>
@@ -1421,106 +1421,105 @@
   <!-- <!-- Contact text End -->
 
   <footer style="background-color:black;" class="footery">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-md-12 col-xs-12">
+    <div class="container footer-container">
+      <!-- <div class="row justify-content-center">
+        <!-- <div class="col-lg-8 col-md-12 col-xs-12">
           <!-- <div class="subscribe-inner wow fadeInDown" data-wow-delay="0.3s"> -->
-          <!-- <h2 class="subscribe-title">To Get Nearly Updates</h2> -->
-          <!-- <form class="text-center form-inline"> -->
-          <!-- <input class="mb-20 form-control" name="email" placeholder="Enter Your Email Here" style="text-align: center;"> -->
-          <!-- <button type="submit" class="btn btn-common sub-btn" data-style="zoom-in" data-spinner-size="30" name="submit" id="submit"> -->
-          <!-- <span class="ladda-label" style="font-size:20px;">Subscribe</span> -->
-          <!-- </button> -->
-          <!-- </form> -->
-          <!-- </div> -->
+      <!-- <h2 class="subscribe-title">To Get Nearly Updates</h2> -->
+      <!-- <form class="text-center form-inline"> -->
+      <!-- <input class="mb-20 form-control" name="email" placeholder="Enter Your Email Here" style="text-align: center;"> -->
+      <!-- <button type="submit" class="btn btn-common sub-btn" data-style="zoom-in" data-spinner-size="30" name="submit" id="submit"> -->
+      <!-- <span class="ladda-label" style="font-size:20px;">Subscribe</span> -->
+      <!-- </button> -->
+      <!-- </form> -->
+      <!-- </div> -->
 
-          <div>
-            <!-- <button type="button" class="base-button" style="border-radius: 25px; font-weight:bold; background-color: #ffc3a0;" onclick="showOrHideExtraPages();">Show Extra Pages</button> -->
-            <!--<button type="button" class="btn btn-success buttRadius" style="visibility: hidden;">Submit</button>-->
+      <div class="footer-about-div">
+        <!-- <button type="button" class="base-button" style="border-radius: 25px; font-weight:bold; background-color: #ffc3a0;" onclick="showOrHideExtraPages();">Show Extra Pages</button> -->
+        <!--<button type="button" class="btn btn-success buttRadius" style="visibility: hidden;">Submit</button>-->
 
-            <div class="row">
-              <div class="dropdown" id="aboutExtra">
-                <button class="dropbtnE footerDropDownColorE">About</button>
-                <div class="dropdown-contentE" style="left:0">
-                  <a href="#">About Us</a>
-                  <a href="#">Mission</a>
-                  <a href="#">Team</a>
-                  <a href="#">Motivation</a>
-                </div>
-              </div>
+        <div class="row">
+          <div class="dropdown" id="aboutExtra">
+            <button class="dropbtnE footerDropDownColorE">About</button>
+            <div class="dropdown-contentE" style="left:0">
+              <a href="#">About Us</a>
+              <a href="#">Mission</a>
+              <a href="#">Team</a>
+              <a href="#">Motivation</a>
             </div>
-
-            <div class="row">
-              <div class="dropdown" id="careersExtra">
-                <button class="dropbtnE footerDropDownColorE">Careers</button>
-                <div class="dropdown-contentE" style="left:0">
-                  <a href="#">Job Opportunities</a>
-                  <a href="#">Research</a>
-                  <a href="#">Why work with us</a>
-                  <a href="#">Our Culture</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="dropdown" id="privacyExtra">
-                <button class="dropbtnE footerDropDownColorE">Privacy</button>
-                <div class="dropdown-contentE" style="left:0">
-                  <a href="#">Copyright</a>
-                  <a href="#">licence</a>
-                  <a href="#">Sharing</a>
-                  <a href="#">Closure</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="dropdown" id="securityExtra">
-                <button class="dropbtnE footerDropDownColorE">Security</button>
-                <div class="dropdown-contentE" style="left:0">
-                  <a href="#">Safety</a>
-                  <a href="#">Certificate</a>
-                  <a href="#">Protection</a>
-                  <a href="#">Standards</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="dropdown" id="securityExtra">
-                <button class="dropbtnE footerDropDownColorE">Accessability</button>
-                <div class="dropdown-contentE" style="left:0">
-                  <a href="#">Inclusion</a>
-                  <a href="#">Diversity</a>
-                  <a href="#">Special Needs</a>
-                  <a href="#">All Users Friendly</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-
-
-
-          <div class="footer-logo">
-            <img width="100px" src="assets/img/logo.png" alt="">
-          </div>
-          <div class="social-icons-footer">
-            <ul>
-              <li class="facebook"><a target="_blank" href="3"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li class="twitter"><a target="_blank" href="3"><i class="fa-brands fa-x-twitter"></i></a></li>
-              <li class="pinterest"><a target="_blank" href="3"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            </ul>
-          </div>
-
-
-
-          <div class="site-info">
-            <p>YSwipe © <span id="currentYear"></span> <a href="" rel="nofollow"></a></p>
           </div>
         </div>
+
+        <div class="row">
+          <div class="dropdown" id="careersExtra">
+            <button class="dropbtnE footerDropDownColorE">Careers</button>
+            <div class="dropdown-contentE" style="left:0">
+              <a href="#">Job Opportunities</a>
+              <a href="#">Research</a>
+              <a href="#">Why work with us</a>
+              <a href="#">Our Culture</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="dropdown" id="privacyExtra">
+            <button class="dropbtnE footerDropDownColorE">Privacy</button>
+            <div class="dropdown-contentE" style="left:0">
+              <a href="#">Copyright</a>
+              <a href="#">licence</a>
+              <a href="#">Sharing</a>
+              <a href="#">Closure</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="dropdown" id="securityExtra">
+            <button class="dropbtnE footerDropDownColorE">Security</button>
+            <div class="dropdown-contentE" style="left:0">
+              <a href="#">Safety</a>
+              <a href="#">Certificate</a>
+              <a href="#">Protection</a>
+              <a href="#">Standards</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="dropdown" id="securityExtra">
+            <button class="dropbtnE footerDropDownColorE">Accessability</button>
+            <div class="dropdown-contentE" style="left:0">
+              <a href="#">Inclusion</a>
+              <a href="#">Diversity</a>
+              <a href="#">Special Needs</a>
+              <a href="#">All Users Friendly</a>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+
+
+      <div class="div-footer-logo">
+
+        <div class="footer-logo">
+          <img width="100px" src="assets/img/logo.png" alt="">
+        </div>
+        <div class="social-icons-footer">
+          <ul>
+            <li class="facebook"><a target="_blank" href="3"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li class="twitter"><a target="_blank" href="3"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li class="pinterest"><a target="_blank" href="3"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+        <div class="site-info">
+          <p>YSwipe © <span id="currentYear"></span> <a href="" rel="nofollow"></a></p>
+        </div>
+      </div>
+    </div>
+    </div>
     </div>
   </footer>
 

@@ -2189,11 +2189,14 @@ h1 {
 }
 
 .container-form textarea {
-  border-radius: 4px !important;
+  border-radius: 20px !important;
 }
 
 .form-submit .btn-common {
   width: 100%;
+}
+.btn-submit-black {
+  background: black;
 }
 
 .list-unstyled li {
@@ -2222,7 +2225,13 @@ h1 {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
 }
-
+.form-control::placeholder {
+  color: black;
+}
+/* .form-group .form-message {
+  border-radius: 30px;
+  border: 2px solid yellow;
+} */
 .form-control:focus {
   border-color: #fc4100;
   box-shadow: none;
@@ -2283,6 +2292,24 @@ footer {
   text-align: center;
   position: relative;
   z-index: 999;
+}
+.footery {
+  /* border: 3px solid yellow; */
+}
+.footery .footer-container {
+  /* border: 3px solid purple; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-container .footer-about-div {
+  /* border: 2px solid green; */
+  padding: 30px 30px;
+}
+
+.footer-container .div-footer-logo {
+  /* border: 2px solid red; */
+  padding: 30px 30px;
 }
 
 .site-info {
