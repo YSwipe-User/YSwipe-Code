@@ -23,12 +23,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5 {
-  font-size: 36px;
-  font-weight: 700;
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Montserrat';
-}
+/* h1, h2, h3, h4, h5 { */
+  /* font-size: 36px; */
+  /* font-weight: 700; */
+  /* /*font-family: 'Roboto', sans-serif;*/ */
+  /* font-family: 'Montserrat'; */
+/* } */
 
 a {
   -webkit-transition: all 0.2s linear;
@@ -45,13 +45,13 @@ a a:focus {
   outline: none;
 }
 
-p {
-  font-weight: 400;
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Montserrat';
-  margin: 0px;
-  font-size: 14px;
-}
+/* p { */
+  /* font-weight: 400; */
+  /* /*font-family: 'Open Sans', sans-serif;*/
+  /* font-family: 'Montserrat'; */
+  /* margin: 0px; */
+  /* font-size: 14px; */
+/* } */
 
 ul, ol {
   list-style: outside none none;
@@ -302,6 +302,7 @@ a.back-to-top {
   bottom: 18px;
   right: 15px;
   text-decoration: none;
+  z-index: 999;
 }
 
 a.back-to-top i {
@@ -1182,12 +1183,12 @@ video {
   opacity: 1;
 }
 
-h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-top: 0;
-  letter-spacing: .3rem;
-}
+/* h1 { */
+  /* font-size: 3rem; */
+  /* text-transform: uppercase; */
+  /* margin-top: 0; */
+  /* letter-spacing: .3rem; */
+/* } */
 
 .video-text {
   background-size: cover;
@@ -2242,12 +2243,12 @@ h1 {
 
 /* Footer Area Start */
 
-footer {
-  background: #161E26;
-  text-align: center;
-  position: relative;
-  z-index: 999;
-}
+/* footer { */
+  /* background: #161E26; */
+  /* text-align: center; */
+  /* position: relative; */
+  /* z-index: 999; */
+/* } */
 
 .site-info {
   position: relative;
@@ -2267,35 +2268,50 @@ footer {
   color: #FC4100;
 }
 
-.social-icons-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+/* .social-icons-footer ul { */
+  /* margin: 0; */
+  /* padding: 0; */
+  /* list-style: none; */
+/* } */
 
-.social-icons-footer ul li {
-  display: inline-block;
-}
+/* .social-icons-footer ul li { */
+  /* display: inline-block; */
+/* } */
 
-.social-icons-footer a {
-  color: black;
-  display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 254, 254, 0.07);
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  text-align: center;
-  font-size: 16px;
-}
+/* .social-icons-footer a { */
+  /* color: black; */
+  /* display: inline-block; */
+  /* margin-left: 5px; */
+  /* margin-right: 5px; */
+  /* margin-bottom: 15px; */
+  /* border-radius: 50px; */
+  /* border: 1px solid rgba(255, 254, 254, 0.07); */
+  /* line-height: 40px; */
+  /* width: 40px; */
+  /* height: 40px; */
+  /* background-color: white; */
+  /* text-align: center; */
+  /* font-size: 16px; */
+/* } */
 
 .social-icons-footer .facebook a:hover {	
   border-color: #4867aa;
   color: #4867aa;
+}
+
+.social-icons-footer .twitter a:hover {
+  /* border-color: #1da1f2; */
+  color: #1da1f2;
+}
+
+.social-icons-footer .linkedin a:hover {
+  /* border-color: blue; */
+  color: blue;
+}
+
+.social-icons-footer .whatsapp a:hover {
+  /* border-color: green; */
+  color: green;
 }
 
 .social-icons-footer .twitter a:hover {
@@ -2401,6 +2417,243 @@ footer {
   margin-bottom: 50px;
 }
 
+
+
+
+/* new footer section */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-left h4 {
+    margin: 0 0 20px 0;
+    font-size: 1.2em;
+}
+
+.footer-left p {
+    margin: 0 0 20px 0;
+}
+
+.footer-left .logo {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer-left .logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+	/* width: 500px; */
+	/* height: 150px; */
+    /* margin-left: -200px; */
+	/* margin-bottom: -40px; */
+	/* margin-top: -40px; */
+}
+
+.footer-left .logo .swipe-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-transform: none;
+    letter-spacing: 0.35em;
+	line-height: normal;
+	font-weight: normal;
+	min-height: 28px;
+	margin-top: 30px;
+	margin-left: -33px;
+}
+
+.footer-left .contact-info {
+    margin: 20px 0;
+    line-height: normal;
+    font-size: 16px;
+}
+
+.footer-left .footer-links {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    font-size: 16px;
+}
+
+.footer-left .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-left .footer-links a:hover {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    max-width: fit-content;
+    word-wrap: break-word;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+}
+
+.footer-right .description {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.footer-right .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.footer-right .subscribe input {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background: transparent;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    text-align: left; /* Align text to the left */
+    width: 265px;
+    height: 40px;
+}
+
+.footer-right .subscribe button {
+    padding: 7px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white; /* Change to the desired color */
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+    width: 120px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.footer-right .social-icons {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer-right .social-icons a {
+    margin-right: 10px;
+}
+
+.footer-right .social-icons img {
+    height: 20px;
+}
+
+.footer-right p:last-of-type {
+    margin: 20px 0 0 0;
+    font-size: 0.8em;
+}
+
+.connectAction {
+    cursor: pointer;
+}
+
+.social-icons-footer ul {
+    margin: 0;
+    margin-top: 90px;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons-footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-icons-footer a {
+    color: black;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 254, 254, 0.07);
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.makeSmall {
+  width: 60px;
+}
+
+.moveLeft {
+    margin-left: -13px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-left, .footer-right {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .social-icons-footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the items horizontally */
+    }
+
+    .social-icons-footer ul li {
+        margin: 10px 0; /* Add some margin to center items properly */
+    }
+
+    .moveLeft {
+        margin-left: 0; /* Remove left margin to center the GIF */
+        display: flex;
+        justify-content: center; /* Center the GIF */
+        width: 100%; /* Make the GIF container take full width */
+    }
+
+    .moveLeft img {
+        margin: 0 auto; /* Center the GIF */
+        display: block;
+    }
+}
+
+/* end of new footer section */
 
 
 
@@ -2775,19 +3028,19 @@ footer {
 }
 
 /* page content */
-h1, h2 {
-  color: white;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  text-align: center;
-}
+/* h1, h2 { */
+  /* color: white; */
+  /* font-family: 'Montserrat'; */
+  /* font-weight: bold; */
+  /* text-align: center; */
+/* } */
 
-h1 {
-  font-size: 6rem;
-  margin-top: 30vh; 
-}
+/* h1 { */
+  /* font-size: 6rem; */
+  /* margin-top: 30vh;  */
+/* } */
 
-h2 { font-size: 3rem; }
+/* h2 { font-size: 3rem; } */
 
 @media (max-width: 750px) {
     #background-video { #display: none; }
@@ -2929,3 +3182,493 @@ h2 { font-size: 3rem; }
   }
   
 }
+
+
+
+
+
+
+/* new philosophy section start*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.philosophy-wrapper {
+    background-color: black;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.philosophy-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 99vh;
+    background-color: rgb(112, 112, 112);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.philosophy-section {
+    flex: 3; /* Increased flex value to take more space */
+    padding: 40px;
+}
+
+.philosophy-section h1,
+.philosophy-section h2 {
+    margin-top: 0;
+}
+
+.philosophy-section h1 {
+    margin-bottom: 20px;
+    font-size: 39px; /* Updated font size */
+    font-weight: normal; /* Updated font weight */
+}
+
+.philosophy-section h2 {
+    margin-bottom: 20px;
+    font-size: 26px; /* Updated font size */
+    font-weight: normal; /* Updated font weight */
+}
+
+.philosophy-section p {
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 18px; /* Updated font size */
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.buttons button {
+    background-color: white;
+    color: #3d3d3d;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #e0e0e0;
+    border: 2px solid white;
+}
+
+.image-section {
+    /* flex: 1.5; /* Reduced flex value to take less space */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns the image to the far right */
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%; /* Adjusted width to cover the available space */
+    height: 100%; /* Ensures it aligns with the grey box height */
+    object-fit: cover;
+}
+
+.social-icons-footerAbout ul {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons-footerAbout ul li {
+    display: inline-block;
+    margin-right: 1px;
+}
+
+.social-icons-footerAbout a {
+    color: white;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 254, 254, 0.07);
+    line-height: 25px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    text-align: center;
+    font-size: 14px;
+}
+
+.slackAbout {
+    color: black;
+    display: inline-block;
+    margin-bottom: 15px;
+    line-height: 25px;
+    margin-right: 3px;
+    text-align: center;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+	.image-section {
+		flex: 6; /* Reduced flex value to take less space */
+		display: flex;
+		align-items: center;
+		justify-content: flex-end; /* Aligns the image to the far right */
+		overflow: hidden;
+    }
+}
+
+@media (min-width: 1201px) {
+	.image-section {
+		flex: 1.5; /* Reduced flex value to take less space */
+		display: flex;
+		align-items: center;
+		justify-content: flex-end; /* Aligns the image to the far right */
+		overflow: hidden;
+    }
+
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .philosophy-container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .image-section {
+        height: auto; /* Adjust height to fit within the viewport */
+        justify-content: center; /* Center the image section */
+    }
+
+    .image-section img {
+        width: 100%; /* Adjust width to cover the available space */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .philosophy-section {
+        padding: 20px;
+    }
+
+    .buttons {
+        margin-bottom: 0; /* Remove space between buttons and image */
+    }
+}
+
+@media (max-width: 768px) {
+    .philosophy-container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .philosophy-section h1 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+
+    .philosophy-section h2 {
+        font-size: 22px; /* Adjust font size for smaller screens */
+    }
+
+    .philosophy-section p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .buttons button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .image-section {
+        flex: 4; /* Reduced flex value to take less space */
+		margin-top: 0; /* Remove space between text and image on smaller screens */
+    }
+
+    .image-section img {
+        width: 100vw; /* Ensure the image takes the full width of the viewport */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    .philosophy-container {
+        padding: 10px;
+    }
+
+    .philosophy-section h1 {
+        font-size: 28px; /* Adjust font size for mobile screens */
+    }
+
+    .philosophy-section h2 {
+        font-size: 20px; /* Adjust font size for mobile screens */
+    }
+
+    .philosophy-section p {
+        font-size: 14px; /* Adjust font size for mobile screens */
+    }
+
+    .buttons button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .image-section img {
+        width: 100vw; /* Ensure the image takes the full width of the viewport */
+        height: auto; /* Maintain aspect ratio */
+    }
+	
+	.image-section {
+        flex: 4; /* Reduced flex value to take less space */
+		margin-top: 0; /* Remove space between text and image on smaller screens */
+    }
+	
+}
+
+
+@media (max-width: 320px) {
+    .social-icons-footerAbout ul {
+        display: flex;
+        flex-direction: column; /* Arrange icons in a column */
+        align-items: center; /* Center icons horizontally */
+        gap: 10px; /* Gap between icons */
+    }
+
+    .social-icons-footerAbout ul li {
+        width: 100%; /* Ensure full width for each row */
+        text-align: center; /* Center align text within each list item */
+    }
+}
+
+
+/* new philosophy section end*/
+
+
+
+
+
+
+/* new popup connect section start */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.connect-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    transition: bottom 0.8s ease-in-out; /* Slower animation */
+    height: 500px; /* Increased height */
+    z-index: 1000;
+    display: none; /* Hide by default */
+}
+
+.connect-content {
+    max-width: 80%;
+    text-align: center;
+    margin: 0;
+}
+
+.connect-logo {
+    margin-bottom: 20px;
+}
+
+.connect-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.connect-content p {
+    font-size: 16px;
+    line-height: 1.8em;
+    margin: 10px 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.connect-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect-content label {
+    font-size: 16px;
+    line-height: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Ensure it aligns with the form group width */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.connect-content input[type="email"] {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px; /* Updated input style */
+    outline: none;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-right: 100px; /* Adjusted padding to the right for the button */
+}
+
+.connect-content button {
+    position: absolute; /* Positioned the button inside the input */
+    right: 1px; /* Adjusted the position */
+    top: 1px;
+    /* bottom: 1px; */
+    background-color: #fff;
+    color: #000;
+    border: 2px solid white;
+    border-radius: 50px; /* Updated button style */
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px; /* Adjusted padding to fit button perfectly */
+    font-size: 16px;
+}
+
+.connect-content button:hover {
+    color: white;
+    background-color: black;
+}
+
+.connect-logo img {
+    max-width: 100px;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-circle {
+    width: 40px; /* Adjusted size of circle */
+    height: 40px; /* Adjusted size of circle */
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px; /* Increased font size of 'x' */
+    cursor: pointer;
+}
+
+.show {
+    display: flex; /* Show the section */
+    bottom: 0; /* Align to the bottom */
+}
+
+/* Responsive styles for tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .connect-section {
+        flex-direction: column; /* Align content in a column for tablets */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    .connect-content {
+        max-width: 80%;
+        margin: 0 auto; /* Center the content */
+    }
+
+    .connect-logo {
+        margin: 20px 0; /* Add vertical margin to the logo */
+    }
+
+    .connect-content h2 {
+        font-size: 20px;
+    }
+
+    .connect-content p {
+        max-width: 100%;
+    }
+
+    .form-group {
+        max-width: 100%;
+    }
+
+    .connect-content label {
+        text-align: center; /* Align label to the left on tablets */
+        padding-left: 0; /* Ensure it's aligned properly */
+        margin-left: 0; /* Remove any left margins */
+    }
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 1025px) {
+    .connect-section {
+        flex-direction: row;
+    }
+
+    .connect-content {
+        max-width: 60%;
+        margin-left: 300px;
+        text-align: left;
+    }
+
+    .connect-logo {
+        margin-right: 300px;
+    }
+
+    .connect-content h2 {
+        font-size: 18px;
+    }
+
+    .connect-content p {
+        max-width: 375px;
+    }
+
+    .form-group {
+        max-width: 400px;
+    }
+
+    .connect-content label {
+        text-align: left; /* Ensure label is aligned to the left on larger screens */
+        margin-left: 0; /* Ensure it's aligned properly with the text */
+    }
+}
+
+
+/* new popup connect section end */
