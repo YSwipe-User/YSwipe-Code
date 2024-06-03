@@ -23,16 +23,17 @@ body {
   overflow-x: hidden;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
-h5 {
-  font-size: 36px;
-  font-weight: 700;
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: "Montserrat";
-}
+h5 { */
+/* font-size: 36px; */
+/* font-weight: 700; */
+/* /*font-family: 'Roboto', sans-serif;*/
+*/
+  /* font-family: "Montserrat"; */
+/* } */
 
 a {
   -webkit-transition: all 0.2s linear;
@@ -309,6 +310,7 @@ a.back-to-top {
   bottom: 18px;
   right: 15px;
   text-decoration: none;
+  z-index: 999;
 }
 
 a.back-to-top i {
@@ -2293,24 +2295,6 @@ footer {
   position: relative;
   z-index: 999;
 }
-.footery {
-  /* border: 3px solid yellow; */
-}
-.footery .footer-container {
-  /* border: 3px solid purple; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.footer-container .footer-about-div {
-  /* border: 2px solid green; */
-  padding: 30px 30px;
-}
-
-.footer-container .div-footer-logo {
-  /* border: 2px solid red; */
-  padding: 30px 30px;
-}
 
 .site-info {
   position: relative;
@@ -2330,35 +2314,50 @@ footer {
   color: #fc4100;
 }
 
-.social-icons-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+/* .social-icons-footer ul { */
+/* margin: 0; */
+/* padding: 0; */
+/* list-style: none; */
+/* } */
 
-.social-icons-footer ul li {
-  display: inline-block;
-}
+/* .social-icons-footer ul li { */
+/* display: inline-block; */
+/* } */
 
-.social-icons-footer a {
-  color: black;
-  display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 254, 254, 0.07);
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  text-align: center;
-  font-size: 16px;
-}
+/* .social-icons-footer a { */
+/* color: black; */
+/* display: inline-block; */
+/* margin-left: 5px; */
+/* margin-right: 5px; */
+/* margin-bottom: 15px; */
+/* border-radius: 50px; */
+/* border: 1px solid rgba(255, 254, 254, 0.07); */
+/* line-height: 40px; */
+/* width: 40px; */
+/* height: 40px; */
+/* background-color: white; */
+/* text-align: center; */
+/* font-size: 16px; */
+/* } */
 
 .social-icons-footer .facebook a:hover {
   border-color: #4867aa;
   color: #4867aa;
+}
+
+.social-icons-footer .twitter a:hover {
+  /* border-color: #1da1f2; */
+  color: #1da1f2;
+}
+
+.social-icons-footer .linkedin a:hover {
+  /* border-color: blue; */
+  color: blue;
+}
+
+.social-icons-footer .whatsapp a:hover {
+  /* border-color: green; */
+  color: green;
 }
 
 .social-icons-footer .twitter a:hover {

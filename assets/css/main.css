@@ -314,6 +314,7 @@ a.back-to-top {
   bottom: 18px;
   right: 15px;
   text-decoration: none;
+  z-index: 999;
 }
 
 a.back-to-top i {
@@ -2270,39 +2271,13 @@ footer {
   color: #fc4100;
 }
 
-.social-icons-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.social-icons-footer ul li {
-  display: inline-block;
-}
-
-.social-icons-footer a {
-  color: black;
-  display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 15px;
-  border-radius: 50px;
-  border: 1px solid rgba(255, 254, 254, 0.07);
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  text-align: center;
-  font-size: 16px;
-}
-
 .social-icons-footer .facebook a:hover {
   border-color: #4867aa;
   color: #4867aa;
 }
 
 .social-icons-footer .twitter a:hover {
-  border-color: #1da1f2;
+  /* border-color: #1da1f2; */
   color: #1da1f2;
 }
 
@@ -2319,6 +2294,10 @@ footer {
 .social-icons-footer .pinterest a:hover {
   border-color: #bd081c;
   color: #bd081c;
+}
+
+.makeSmall {
+  width: 60px;
 }
 
 .link-list {
@@ -2941,3 +2920,395 @@ textarea {
   -moz-border-radius: 500px;
   border-radius: 500px;
 }
+
+/* new index section start */
+.bodyI {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: url("background-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.containerI {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.h1I {
+  font-size: 40px;
+  margin-bottom: 70px;
+}
+
+.description {
+  max-width: 800px;
+  font-size: 18px;
+  margin-bottom: 120px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 800px;
+}
+
+.feature {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 6em;
+  color: #efa573;
+  margin-bottom: 50px;
+}
+
+.h2I {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.pI {
+  font-size: 16px;
+  max-width: 300px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+  .h1I {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 100px;
+  }
+
+  .icon {
+    font-size: 5em;
+    margin-bottom: 40px;
+  }
+
+  .h2I {
+    font-size: 18px;
+  }
+
+  .pI {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 959px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .h1I {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-bottom: 80px;
+  }
+
+  .icon {
+    font-size: 4em;
+    margin-bottom: 30px;
+  }
+
+  .h2I {
+    font-size: 16px;
+  }
+
+  .pI {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 479px) {
+  .h1I {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    font-size: 12px;
+    margin-bottom: 60px;
+  }
+
+  .icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .h2I {
+    font-size: 14px;
+  }
+
+  .pI {
+    font-size: 10px;
+  }
+}
+
+/* Responsive Styles for Height */
+@media (max-height: 720px) and (min-height: 650px) {
+  .h1I {
+    margin-top: 30%; /* Adjust this percentage as needed */
+  }
+  .videoMarginUp {
+    /* margin-top: 100%; */
+    margin-top: 40%;
+  }
+}
+
+@media (max-height: 650px) and (min-height: 500px) {
+  .h1I {
+    margin-top: 30%; /* Adjust this percentage as needed */
+  }
+  .videoMarginUp {
+    /* margin-top: 100%; */
+    margin-top: 60%;
+  }
+}
+
+@media (max-height: 500px) and (min-height: 400px) {
+  .h1I {
+    margin-top: 150%; /* Adjust this percentage as needed */
+  }
+  .videoMarginUp {
+    /* margin-top: 100%; */
+    margin-top: 130%;
+  }
+}
+
+@media (max-height: 400px) {
+  .h1I {
+    margin-top: 190%; /* Adjust this percentage as needed */
+  }
+  .videoMarginUp {
+    /* margin-top: 150%; */
+    margin-top: 180%;
+  }
+}
+
+/* new index section end */
+
+/* new popup connect section start */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.connect-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  transition: bottom 0.8s ease-in-out; /* Slower animation */
+  height: 500px; /* Increased height */
+  z-index: 1000;
+  display: none; /* Hide by default */
+}
+
+.connect-content {
+  max-width: 80%;
+  text-align: center;
+  margin: 0;
+}
+
+.connect-logo {
+  margin-bottom: 20px;
+}
+
+.connect-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.connect-content p {
+  font-size: 16px;
+  line-height: 1.8em;
+  margin: 10px 0;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.connect-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connect-content label {
+  font-size: 16px;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Ensure it aligns with the form group width */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.connect-content input[type="email"] {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px; /* Updated input style */
+  outline: none;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-right: 100px; /* Adjusted padding to the right for the button */
+}
+
+.connect-content button {
+  position: absolute; /* Positioned the button inside the input */
+  right: 1px; /* Adjusted the position */
+  top: 1px;
+  /* bottom: 1px; */
+  background-color: #fff;
+  color: #000;
+  border: 2px solid white;
+  border-radius: 50px; /* Updated button style */
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px; /* Adjusted padding to fit button perfectly */
+  font-size: 16px;
+}
+
+.connect-content button:hover {
+  color: white;
+  background-color: black;
+}
+
+.connect-logo img {
+  max-width: 100px;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-circle {
+  width: 40px; /* Adjusted size of circle */
+  height: 40px; /* Adjusted size of circle */
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px; /* Increased font size of 'x' */
+  cursor: pointer;
+}
+
+.show {
+  display: flex; /* Show the section */
+  bottom: 0; /* Align to the bottom */
+}
+
+/* Responsive styles for tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .connect-section {
+    flex-direction: column; /* Align content in a column for tablets */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+  }
+
+  .connect-content {
+    max-width: 80%;
+    margin: 0 auto; /* Center the content */
+  }
+
+  .connect-logo {
+    margin: 20px 0; /* Add vertical margin to the logo */
+  }
+
+  .connect-content h2 {
+    font-size: 20px;
+  }
+
+  .connect-content p {
+    max-width: 100%;
+  }
+
+  .form-group {
+    max-width: 100%;
+  }
+
+  .connect-content label {
+    text-align: center; /* Align label to the left on tablets */
+    padding-left: 0; /* Ensure it's aligned properly */
+    margin-left: 0; /* Remove any left margins */
+  }
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 1025px) {
+  .connect-section {
+    flex-direction: row;
+  }
+
+  .connect-content {
+    max-width: 60%;
+    margin-left: 300px;
+    text-align: left;
+  }
+
+  .connect-logo {
+    margin-right: 300px;
+  }
+
+  .connect-content h2 {
+    font-size: 18px;
+  }
+
+  .connect-content p {
+    max-width: 375px;
+  }
+
+  .form-group {
+    max-width: 400px;
+  }
+
+  .connect-content label {
+    text-align: left; /* Ensure label is aligned to the left on larger screens */
+    margin-left: 0; /* Ensure it's aligned properly with the text */
+  }
+}
+
+/* new popup connect section end */
