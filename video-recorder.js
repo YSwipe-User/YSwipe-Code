@@ -9,7 +9,7 @@ var options = { mimeType: "video/webm; codecs=vp9" };
 var recordedChunks = [];
 
 if (videoelement) {
-    console.log("we have the video")
+    console.log("we have the video");
     navigator.mediaDevices
         .getUserMedia(localStreamConstraints)
         .then(gotStream)
@@ -54,12 +54,25 @@ function download() {
     var blob = new Blob(recordedChunks, {
         type: 'video/webm'
     });
+
+    // Get the current date including milliseconds
+    var now = new Date();
+    var timestamp = String(now.getDate()).padStart(2, '0') + "-" + 
+                    String(now.getMonth() + 1).padStart(2, '0') + "-" + 
+                    now.getFullYear() + "_" + 
+                    String(now.getHours()).padStart(2, '0') + "-" + 
+                    String(now.getMinutes()).padStart(2, '0') + "-" + 
+                    String(now.getSeconds()).padStart(2, '0') + "-" + 
+                    String(now.getMilliseconds()).padStart(3, '0');
+
+    var filename = 'profile-video-' + timestamp + '.webm';
+
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     document.body.appendChild(a);
     a.style = 'display: none';
     a.href = url;
-    a.download = 'test.webm';
+    a.download = filename;
     a.click();
     window.URL.revokeObjectURL(url);
 }
