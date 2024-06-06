@@ -895,8 +895,8 @@
 			<div class="social-icons-footerAbout">
               <ul>
                 <i class="fa-brands fa-slack slackAbout"></i>
-                <li class="twitter"><a target="_blank" href="3"><i class="fa-brands fa-x-twitter"></i></a></li>
-				<li class="linkedin"><a target="_blank" href="3"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="twitter"><a target="_blank" href="https://x.com/Y_Swipe"><i class="fa-brands fa-x-twitter"></i></a></li>
+				<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/yswipe/about/"><i class="fa-brands fa-linkedin-in"></i></a></li>
 				<li class="moveLeft"><img class="makeSmall" src="assets/img/yswipe-gif.gif" /></li>
               </ul>
             </div>
@@ -904,7 +904,7 @@
 			</br>
             <div class="buttons">
                 <button>Customers</button>
-                <button>Team</button>
+                <button onclick="document.getElementById('YSwipeTeam').scrollIntoView({ behavior: 'smooth' });">Team</button>
                 <button>Investors</button>
                 <button>Whitepaper</button>
                 <button>Philosophy</button>
@@ -921,7 +921,7 @@
 
 
   <!-- Team Section Start -->>
-  <div class="container teamy">
+  <div class="container teamy" id="YSwipeTeam">
     <div class="row">
       <div class="col-12">
         <div class="section-title-header text-center">
@@ -948,8 +948,8 @@
             </div> -->
           </div>
           <div class="info-text">
-            <h3><a href="#" style="color:white;">Kiran Kadadekar</a></h3>
-            <p style="color:white;">Growth Janitor | Head of Relations</p>
+            <h3><a href="#" style="color:white; text-align: center;">Kiran Kadadekar</a></h3>
+            <p style="color:white; text-align: center;">Growth Janitor | Head of Relations</p>
           </div>
         </div>
         <!-- Team Item Ends -->
@@ -971,8 +971,8 @@
             </div> -->
           </div>
           <div class="info-text">
-            <h3><a href="#" style="color:white;">Boudy Rego</a></h3>
-            <p style="color:white;">Head Janitor | Principal & Custodian</p>
+            <h3><a href="#" style="color:white; text-align: center">Boudy Rego</a></h3>
+            <p style="color:white; text-align: center;">Head Janitor | Principal & Custodian</p>
           </div>
         </div>
         <!-- Team Item Ends -->
@@ -995,8 +995,8 @@
             </div> -->
           </div>
           <div class="info-text">
-            <h3><a href="#" style="color:white;">Kajal Malik</a></h3>
-            <p style="color:white;">Technical Janitor | Software Engineer</p>
+            <h3><a href="#" style="color:white; text-align: center;">Kajal Malik</a></h3>
+            <p style="color:white; text-align: center;">Technical Janitor | Software Engineer</p>
           </div>
         </div>
         <!-- Team Item Ends -->
@@ -1019,8 +1019,8 @@
             </div> -->
           </div>
           <div class="info-text">
-            <h3><a href="#" style="color:white;">Ramy Elsaraf</a></h3>
-            <p style="color:white;">Technical Janitor | Full Stack Engineer</p>
+            <h3><a href="#" style="color:white; text-align: center;">Ramy Elsaraf</a></h3>
+            <p style="color:white; text-align: center;">Technical Janitor | Full Stack Engineer</p>
           </div>
         </div>
         <!-- Team Item Ends -->
@@ -1035,6 +1035,8 @@
   <!-- Team Section End -->
 
   </br></br>
+  
+  
   <!-- Company History Section -->
   <section class="section">
     <!-- <div class="title"> -->
@@ -1045,9 +1047,16 @@
     <!-- </div> -->
 
     <div class="about-center section-center">
-      <article class="about-img">
-        <img src="./hero-bcg.jpeg" alt="" />
+      <div class="image-container">
+	  <article class="about-img">
+        <!-- <img src="./hero-bcg.jpeg" alt="" /> -->
+		<!-- <img class="makeSmall" src="assets/img/yswipe-gif.gif" /> -->
+    <img src="./hero-bcg.jpeg" alt="" class="background" />
+    
+  
       </article>
+	  <img class="makeSmall" src="assets/img/yswipe-gif.gif" />
+	  </div>
       <article class="about">
         <!-- btn container -->
         <div class="btn-container">
@@ -1385,11 +1394,11 @@
         <div class="col-lg-8 col-md-12 col-xs-12">
           <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
             <div class="form-wrapper" style="border-radius:50px;">
-              <form role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+              <form role="form" action="https://formsubmit.co/ramysolh93@gmail.com" method="POST" id="contactForm" name="contact-form" data-toggle="validator">
                 <div class="row">
                   <div class="col-md-6 form-line">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="email" placeholder="First Name" required
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required
                         data-error="Please enter your name">
                       <div class="help-block with-errors"></div>
                     </div>
@@ -1403,7 +1412,7 @@
                   </div>
                   <div class="col-md-12 form-line">
                     <div class="form-group">
-                      <input type="tel" class="form-control" id="msg_subject" name="subject" placeholder="Subject"
+                      <input type="tel" class="form-control" id="msg_subject" name="_subject" placeholder="Subject"
                         required data-error="Please enter your message subject">
                       <div class="help-block with-errors"></div>
                     </div>
@@ -1573,7 +1582,7 @@
         <div class="connect-content">
             <h2>Stay Connected with YSwipe</h2>
             <p>Join our community of wonderful humans and be the first to test our beta launch!</p>
-            <form>
+            <form action="https://formsubmit.co/ramysolh93@gmail.com" method="POST">
                 <label for="email">Email *</label>
                 <div class="form-group">
                     <input type="email" id="email" name="email" onmouseout="this.style.backgroundColor='rgb(222,189,8)'" required>
@@ -1616,7 +1625,7 @@
         <div class="contact-info">
             <p class="connectAction" >Connect</p>
             <p>P: (+1) 403.805.3504</p>
-            <p>E: info@YSwipe.com</p>
+            <p><a href="mailto:info@YSwipe.com" style="text-decoration:none; color: inherit;">E: info@YSwipe.com</a></p>
         </div>
         <div class="footer-links">
             <a href="privacy.html" style="margin-bottom: 15px;">Privacy Statement</a>
@@ -1630,9 +1639,12 @@
     line-height: 1.8em;" >Join YSwipe & find your people.</p>
 	    </br>
         <div class="subscribe">
-            <input type="text" onmouseout="this.style.backgroundColor='rgb(222,189,8)'">
-            <button>Connect</button>
-        </div>
+        <form action="https://formsubmit.co/ramysolh93@gmail.com" method="POST">
+            <input type="text" name="email" onmouseout="this.style.backgroundColor='rgb(222,189,8)'" placeholder="Enter your email" required>
+            </br>
+			<button type="submit">Connect</button>
+        </form>
+    </div>
         <!-- <div class="social-icons"> -->
             <!-- <a target="_blank" href=""><i class="fa-brands fa-facebook-f"></i></a> -->
             <!-- <a target="_blank" href="3"><i class="fa-brands fa-x-twitter"></i></a> -->
@@ -1642,9 +1654,9 @@
 		
 		<div class="social-icons-footer">
               <ul>
-                <li class="linkedin"><a target="_blank" href="3"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li class="twitter"><a target="_blank" href="3"><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li class="whatsapp"><a target="_blank" href="3"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/yswipe/about/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="twitter"><a target="_blank" href="https://x.com/Y_Swipe"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="facebook"><a target="_blank" href="3"><i class="fa-brands fa-facebook-f"></i></a></li>
 				<li class="moveLeft"><img class="makeSmall" src="assets/img/yswipe-gif.gif" /></li>
               </ul>
 		
