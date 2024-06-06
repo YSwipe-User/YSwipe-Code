@@ -2596,7 +2596,7 @@ video {
 }
 
 .connectAction {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .social-icons-footer ul {
@@ -3188,15 +3188,15 @@ h2 {
   width: 1px;
 }
 
-::placeholder {
-  color: black;
-  opacity: 1; /* Firefox */
-}
+/* ::placeholder { */
+  /* color: black; */
+  /* opacity: 1; /* Firefox */ */
+/* } */
 
-::-ms-input-placeholder {
-  /* Edge 12-18 */
-  color: black;
-}
+/* ::-ms-input-placeholder { */
+  /* /* Edge 12-18 */ */
+  /* color: black; */
+/* } */
 
 
 /* new index section start */
@@ -3222,12 +3222,16 @@ h2 {
 .h1I {
   font-size: 40px;
   margin-bottom: 70px;
+  color: white;
+  text-align: center;
 }
 
 .description {
   max-width: 800px;
   font-size: 18px;
   margin-bottom: 120px;
+  color: white;
+  text-align: center;
 }
 
 .features {
@@ -3252,11 +3256,15 @@ h2 {
 .h2I {
   font-size: 20px;
   margin-bottom: 20px;
+  color: white;
+  text-align: center;
 }
 
 .pI {
   font-size: 16px;
   max-width: 300px;
+  color: white;
+  text-align: center;
 }
 
 /* Responsive Styles */

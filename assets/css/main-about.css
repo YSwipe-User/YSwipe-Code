@@ -1922,10 +1922,12 @@ video {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .team-item .info-text h3 a {
   color: #212121;
+  text-align: center;
 }
 
 .team-item .info-text h3 a:hover {
@@ -1935,6 +1937,7 @@ video {
 .team-item .info-text p {
   margin: 0;
   color: #888;
+  text-align: center;
 }
 
 .team-item:hover .team-overlay {
@@ -2627,7 +2630,7 @@ video {
 }
 
 .connectAction {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .social-icons-footer ul {
@@ -3710,3 +3713,27 @@ body {
 
 
 /* new philosophy section end*/
+
+
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .image-container img.background {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-container img.makeSmall {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      height: auto;
+    }
