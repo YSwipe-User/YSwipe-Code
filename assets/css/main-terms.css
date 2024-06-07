@@ -675,7 +675,7 @@ a.back-to-top:focus {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: black;
+  color: white;
   font-size: 14px;
   padding: 0 10px;
   margin-top: 10px;
@@ -943,17 +943,17 @@ a.back-to-top:focus {
 
 @media (min-width: 320px) and (max-width: 1024px) {
   .dropdown-content {
-	color: white; 
+	color: black; 
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: white;
     min-width: 160px;
     /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
     right: 0; /* Position the dropdown content to the right */
   }
   .dropdown-content a {
-  color: white;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -962,7 +962,7 @@ a.back-to-top:focus {
 
 @media (min-width: 1024px) {
   .dropdown-content {
-	color: black;
+	color: white;
     display: none;
     position: absolute;
     background-color: transparent;
@@ -972,7 +972,7 @@ a.back-to-top:focus {
     right: 0; /* Position the dropdown content to the right */
   }
   .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -3184,7 +3184,7 @@ h2 {
 }
 
 .borderNav {
-  border: 1px solid black !important;
+  border: 1px solid white !important;
   border-radius: 50px !important;
   /* height: 25px; */
   justify-content: center;
@@ -3192,7 +3192,7 @@ h2 {
 }
 
 .borderNav:hover {
-  background-color: black !important;
+  background-color: white !important;
   color: white !important;
 }
 
