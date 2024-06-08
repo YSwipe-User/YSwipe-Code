@@ -6,7 +6,6 @@ html {
 
 body {
   margin: 0;
-
   background: #fff;
   font-size: 15px;
   font-weight: 400;
@@ -86,6 +85,10 @@ ol li {
   letter-spacing: 0.1rem;
 }
 
+.banner-desc {
+  font-family: montserrat, sans-serif;
+  font-size: 24px;
+}
 .section-titile-bg {
   display: inline;
   font-size: 115px;
@@ -610,10 +613,16 @@ a.back-to-top:focus {
 .navbar-brand {
   position: relative;
   padding: 0px;
+  width: 100%;
+  height: 20vh;
+  left: 0;
 }
 
 .navbar-brand img {
-  width: 75%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  /* border: 1px solid gold; */
 }
 
 .top-nav-collapse {
@@ -661,13 +670,14 @@ a.back-to-top:focus {
 
 .navbar-expand-lg .navbar-toggler {
   background: transparent;
-  border: 1px solid #fc4100;
   background-image: linear-gradient(65deg, #efa573 0, #efa573 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   border-radius: 4px;
   cursor: pointer;
+  border: 1px solid gray;
+  z-index: 1;
 }
 
 .indigo {
@@ -685,7 +695,7 @@ a.back-to-top:focus {
   font-weight: 500;
   /* line-height: 40px; */
   text-transform: uppercase;
-  background: transparent;
+  /* background: white; */
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -886,15 +896,26 @@ a.back-to-top:focus {
     background-color: black !important;
   }
   .logoColor {
-    background-color: black;
+    background-color: #000;
+    /* margin-left: 0; */
+    /* margin-top: 0; */
+    /* width: 50%; */
+    margin: 10px 10px 10px 0;
+    /* height: 50%; */
+    padding: 10px 30px 15px 0px;
   }
   .bg-inverse {
     background: #fff !important;
     box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
   }
-  .navbar-expand-lg .navbar-brand,
+  /* .navbar-expand-lg .navbar-brand, */
   .navbar-expand-lg .navbar-toggler {
     margin: 0px 15px;
+  }
+  .navbar-expand-lg .navbar-brand {
+    margin-left: 0;
+    left: 0;
+    padding-left: 0;
   }
   .navbar-nav {
     padding: 5px 15px;
@@ -903,7 +924,8 @@ a.back-to-top:focus {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0px 40px;
-    color: #212121;
+    /* color: #212121; */
+    color: white;
   }
 
   .navbar-expand-lg .navbar-nav .nav-linkC {
@@ -916,12 +938,12 @@ a.back-to-top:focus {
 
 @media (max-width: 991px) {
   .bg-inverse {
-    background: #fff !important;
+    background: black !important;
     box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
   }
   .navbar-expand-lg .navbar-brand,
   .navbar-expand-lg .navbar-toggler {
-    margin: 0px 15px;
+    margin: 0px;
   }
   .navbar-nav {
     padding: 5px 15px;
@@ -929,8 +951,16 @@ a.back-to-top:focus {
   .navbar-expand-lg .navbar-nav .nav-link {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0px 40px;
-    color: #212121;
+    /* padding: 0px 40px; */
+    /* color: black; */
+    color: white;
+  }
+  .nav-container {
+    background-color: black;
+    left: 0;
+    justify-content: space-between;
+    align-content: left;
+    margin-left: 0;
   }
 
   .navbar-expand-lg .navbar-nav .nav-linkC {
@@ -941,15 +971,67 @@ a.back-to-top:focus {
   }
 }
 
+/* For screens between 320px and 1024px */
 @media (min-width: 320px) and (max-width: 1024px) {
+  .header-section {
+    height: 100vh;
+  }
+  .banner-desc {
+    display: block;
+    width: 100vw;
+    white-space: nowrap;
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: montserrat;
+    font-size: 4vw;
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    transform: scaleX(calc(100vw / 100%)); /* Scale the text to fit the width */
+    transform-origin: left; /* Scale from the left to avoid shifting */
+  }
+
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: black;
     min-width: 160px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    right: 0; /* Position the dropdown content to the right */
+    margin-left: 15vw;
+    top: -1vh;
+  }
+}
+
+/* Additional media query for screens smaller than 320px */
+@media (max-width: 319px) {
+  .header-section {
+    height: 100vh;
+  }
+  .banner-desc {
+    display: block;
+    width: 100vw;
+    white-space: nowrap;
+    box-sizing: border-box;
+    line-height: 1;
+    font-family: montserrat;
+    font-size: 3vw; /* Slightly smaller font size for smaller screens */
+    padding: 0;
+    height: auto;
+    overflow: hidden;
+    transform: scaleX(calc(100vw / 100%)); /* Scale the text to fit the width */
+    transform-origin: left; /* Scale from the left to avoid shifting */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 120px; /* Adjust min-width for smaller screens */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 10vw; /* Adjust margin for smaller screens */
+    top: -1vh;
   }
 }
 
@@ -2792,7 +2874,7 @@ video {
 }
 
 .footerDropDownColor {
-  background-color: black;
+  background-color: transparent;
 }
 
 .footerDropDownColorE {
@@ -3053,11 +3135,12 @@ h2 {
 
 @media (max-width: 750px) {
   #background-video {
-    #display: none;
+    /* #display: none; */
   }
   body {
-    background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+    /* background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat; */
     background-size: cover;
+    background: black;
   }
 }
 
@@ -3125,14 +3208,30 @@ h2 {
 }
 
 #hero-area .contents .banner-desc {
-  font-size: 17px;
+  /* font-size: 1%;  */
   font-weight: 400;
   color: #fff;
-  line-height: 30px;
+  line-height: 1;
   margin-bottom: 30px;
-  padding: 0px 70px;
+  padding: 0 5%; /* Responsive padding */
   opacity: 0;
+  white-space: nowrap; /* Prevent text from wrapping */
+  max-width: 100%;
+  overflow: hidden; /* Ensure text doesn't overflow */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
 }
+
+/* @media (max-width: 768px) {
+  #hero-area .contents .banner-desc {
+    font-size: 1%; 
+  }
+}
+
+@media (max-width: 480px) {
+  #hero-area .contents .banner-desc {
+    font-size: 1%; 
+  }
+} */
 
 #hero-area .contents .btn {
   margin: 0px 10px 0px;
@@ -3610,3 +3709,16 @@ body {
 }
 
 /* new popup connect section end */
+.nav-link {
+  color: white;
+}
+
+.nav-link :hover {
+  color: black;
+  background: white;
+}
+.borderNav {
+  border: 2px solid white;
+  cursor: pointer;
+  color: black;
+}
