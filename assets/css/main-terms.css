@@ -1610,6 +1610,10 @@ video {
   padding-left: 56px;
 }
 
+.bgColor {
+	/* background-color: black; */
+}
+
 .onHoverBGColor:hover {
   color: white;
   background-color: black;
