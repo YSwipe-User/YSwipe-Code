@@ -874,6 +874,31 @@ a.back-to-top:focus {
 
 /* only small tablets */
 @media (min-width: 320px) and (max-width: 991px) {
+
+  .gap-div{
+    color: #000;
+    background-color: #000;
+    border: 2px solid yellowgreen;
+    height: 20vh;
+    z-index: 1;
+  }
+
+  .navbar-brand {
+    position: relative;
+    padding: 0px;
+    width: 90%;
+    /* height: 20vh; */
+    left: 0;
+  }
+
+  .navbar-brand img {
+    content: url("/assets/img/Yswipe_logo_mobile_small.png");
+    width: 60%;
+    height: 100%;
+    left: 0;
+    /* border: 1px solid gold; */
+  }
+
   .logoColor {
     background-color: black;
   }
