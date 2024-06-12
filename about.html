@@ -913,15 +913,15 @@
         </br>
         <div class="buttons">
           <button id="openCustomersPdfBtn">Customers</button>
-		  <a id="customersPdfLink" href="Y-Customers.pdf" target="_blank" style="display: none;">Open PDF</a>
-		  <!-- In team button below: onclick="document.getElementById('YSwipeTeam').scrollIntoView({ behavior: 'smooth' });" -->
+          <a id="customersPdfLink" href="Y-Customers.pdf" target="_blank" style="display: none;">Open PDF</a>
+          <!-- In team button below: onclick="document.getElementById('YSwipeTeam').scrollIntoView({ behavior: 'smooth' });" -->
           <button id="openTeamPdfBtn">Team</button>
-		  <a id="teamPdfLink" href="Y-Team.pdf" target="_blank" style="display: none;">Open PDF</a>
+          <a id="teamPdfLink" href="Y-Team.pdf" target="_blank" style="display: none;">Open PDF</a>
           <button>Investors</button>
           <button id="openWhitepaperPdfBtn">Whitepaper</button>
-		  <a id="whitepaperPdfLink" href="YSwipe-Whitepaper.24.pdf" target="_blank" style="display: none;">Open PDF</a>
+          <a id="whitepaperPdfLink" href="YSwipe-Whitepaper.24.pdf" target="_blank" style="display: none;">Open PDF</a>
           <button id="openPhilosophyPdfBtn">Philosophy</button>
-		  <a id="philosophyPdfLink" href="Y-Philosophy.pdf" target="_blank" style="display: none;">Open PDF</a>
+          <a id="philosophyPdfLink" href="Y-Philosophy.pdf" target="_blank" style="display: none;">Open PDF</a>
         </div>
       </div>
       <div class="image-section">
@@ -1633,7 +1633,7 @@
 
       <div class="contact-info">
         <p class="connectAction">Connect</p>
-        <p>P: (+1) 403.805.3504</p>
+        <!-- <p>P: (+1) 403.805.3504</p> -->
         <p><a href="mailto:info@YSwipe.com" style="text-decoration:none; color: inherit;">E: info@YSwipe.com</a></p>
       </div>
       <div class="footer-links">
@@ -1847,32 +1847,32 @@
       section.style.bottom = '-100%'; // Reset the position for next toggle
     });
   </script>
-  
-  
+
+
   <script>
-    document.getElementById('openCustomersPdfBtn').addEventListener('click', function() {
-		document.getElementById('customersPdfLink').click();
-	});
-	document.getElementById('openTeamPdfBtn').addEventListener('click', function() {
-		document.getElementById('teamPdfLink').click();
-	});
-	document.getElementById('openWhitepaperPdfBtn').addEventListener('click', function() {
-		document.getElementById('whitepaperPdfLink').click();
-	});
-	document.getElementById('openPhilosophyPdfBtn').addEventListener('click', function() {
-		document.getElementById('philosophyPdfLink').click();
-	});
-	
+    document.getElementById('openCustomersPdfBtn').addEventListener('click', function () {
+      document.getElementById('customersPdfLink').click();
+    });
+    document.getElementById('openTeamPdfBtn').addEventListener('click', function () {
+      document.getElementById('teamPdfLink').click();
+    });
+    document.getElementById('openWhitepaperPdfBtn').addEventListener('click', function () {
+      document.getElementById('whitepaperPdfLink').click();
+    });
+    document.getElementById('openPhilosophyPdfBtn').addEventListener('click', function () {
+      document.getElementById('philosophyPdfLink').click();
+    });
+
 	<!-- document.getElementById('openCulturePdfBtn').addEventListener('click', function() { -->
-		<!-- document.getElementById('culturePdfLink').click(); -->
-	<!-- }); -->
+		< !--document.getElementById('culturePdfLink').click(); -->
+	< !-- }); -->
   </script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var currentYear = new Date().getFullYear();
-      document.getElementById('currentYear').textContent = currentYear;
-    });
+      document.addEventListener('DOMContentLoaded', function () {
+        var currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+      });
   </script>
 
 </body>
