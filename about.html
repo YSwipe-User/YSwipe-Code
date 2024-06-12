@@ -912,11 +912,16 @@
 
         </br>
         <div class="buttons">
-          <button>Customers</button>
-          <button onclick="document.getElementById('YSwipeTeam').scrollIntoView({ behavior: 'smooth' });">Team</button>
+          <button id="openCustomersPdfBtn">Customers</button>
+		  <a id="customersPdfLink" href="Y-Customers.pdf" target="_blank" style="display: none;">Open PDF</a>
+		  <!-- In team button below: onclick="document.getElementById('YSwipeTeam').scrollIntoView({ behavior: 'smooth' });" -->
+          <button id="openTeamPdfBtn">Team</button>
+		  <a id="teamPdfLink" href="Y-Team.pdf" target="_blank" style="display: none;">Open PDF</a>
           <button>Investors</button>
-          <button>Whitepaper</button>
-          <button>Philosophy</button>
+          <button id="openWhitepaperPdfBtn">Whitepaper</button>
+		  <a id="whitepaperPdfLink" href="YSwipe-Whitepaper.24.pdf" target="_blank" style="display: none;">Open PDF</a>
+          <button id="openPhilosophyPdfBtn">Philosophy</button>
+		  <a id="philosophyPdfLink" href="Y-Philosophy.pdf" target="_blank" style="display: none;">Open PDF</a>
         </div>
       </div>
       <div class="image-section">
@@ -1635,7 +1640,7 @@
         <a href="privacy.html" style="margin-bottom: 15px;">Privacy Statement</a>
         <a href="terms.html" style="margin-bottom: 15px;">Terms Of Use</a>
         <a href="accessibility.html" style="margin-bottom: 15px;">Accessibility Statement</a>
-        <a href="#">Culture</a>
+        <a href="YS-Culture.pdf">Culture</a>
       </div>
     </div>
     <div class="footer-right">
@@ -1842,7 +1847,26 @@
       section.style.bottom = '-100%'; // Reset the position for next toggle
     });
   </script>
-
+  
+  
+  <script>
+    document.getElementById('openCustomersPdfBtn').addEventListener('click', function() {
+		document.getElementById('customersPdfLink').click();
+	});
+	document.getElementById('openTeamPdfBtn').addEventListener('click', function() {
+		document.getElementById('teamPdfLink').click();
+	});
+	document.getElementById('openWhitepaperPdfBtn').addEventListener('click', function() {
+		document.getElementById('whitepaperPdfLink').click();
+	});
+	document.getElementById('openPhilosophyPdfBtn').addEventListener('click', function() {
+		document.getElementById('philosophyPdfLink').click();
+	});
+	
+	<!-- document.getElementById('openCulturePdfBtn').addEventListener('click', function() { -->
+		<!-- document.getElementById('culturePdfLink').click(); -->
+	<!-- }); -->
+  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
