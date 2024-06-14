@@ -913,15 +913,15 @@
         </br>
         <div class="buttons">
           <button id="openCustomersPdfBtn">Customers</button>
-          <a id="customersPdfLink" href="Y-Customers.pdf" target="_blank" style="display: none;">Open PDF</a>
+          <a id="customersPdfLink" href="Y-Customers.html" target="_blank" style="display: none;">Open PDF</a>
           <!-- In team button below: onclick="document.getElementById('YSwipeTeam').scrollIntoView({ behavior: 'smooth' });" -->
           <button id="openTeamPdfBtn">Team</button>
-          <a id="teamPdfLink" href="Y-Team.pdf" target="_blank" style="display: none;">Open PDF</a>
-          <button>Investors</button>
+          <a id="teamPdfLink" href="Y-Team.html" target="_blank" style="display: none;">Open PDF</a>
+          <!-- <button>Investors</button> -->
           <button id="openWhitepaperPdfBtn">Whitepaper</button>
-          <a id="whitepaperPdfLink" href="YSwipe-Whitepaper.24.pdf" target="_blank" style="display: none;">Open PDF</a>
+          <a id="whitepaperPdfLink" href="YSwipe-Whitepaper.24.html" target="_blank" style="display: none;">Open PDF</a>
           <button id="openPhilosophyPdfBtn">Philosophy</button>
-          <a id="philosophyPdfLink" href="Y-Philosophy.pdf" target="_blank" style="display: none;">Open PDF</a>
+          <a id="philosophyPdfLink" href="Y-Philosophy.html" target="_blank" style="display: none;">Open PDF</a>
         </div>
       </div>
       <div class="image-section">
@@ -1073,7 +1073,7 @@
         <!-- btn container -->
         <div class="btn-container">
           <button class="tab-btn active" data-id="vision">Vision</button>
-          <button class="tab-btn" data-id="goals">Goals</button>
+          <button class="tab-btn" data-id="goals">Goal</button>
           <button class="tab-btn" data-id="history">History</button>
         </div>
         <div class="about-content">
@@ -1082,20 +1082,13 @@
             <h4>History</h4>
 
             <p>
-              I had over a hundred job rejections, and I couldn't bring myself to write another CV or rework my resume.
-              It was truly defeating, and I’ll be honest, depressing. I never met anyone that enjoyed the application
-              process which was no surprise, but I wondered if hiring managers disliked the recruitment process as much
-              as I loathed the application process. Well, it turns out they do. After speaking with companies who are
-              hiring, recruiters, HR managers, and individual job seekers, it would appear everyone is waiting for the
-              industry to move itself into the future because this system is universally disliked. Maybe it’s safe to
-              say we want an “Uber moment”. However, nobody knows what that looks like?
+              With over 100 rejections, I couldn't bring myself to write another job application. It was truly devaluing, depressing, and unproductive. 
+			  I had never met someone that enjoyed the process. I wondered however, if hiring managers disliked recruitment as much as I disliked applications. 
+			  It turns out they do. After speaking with HR Managers, Recruiters, and individual job seekers, 
+			  it appears everyone is waiting for the industry to move itself into the future.
               <br>
               <br>
-              Well maybe…not quite. YSwipe certainly has some thoughts and is executing on these visions. We would still
-              love to hear your thoughts too! We can all benefit from coming together to solve this problem.
-              <br>
-              <br>
-              We hope to see you at the startline.
+              Enter YSwipe. 
             </p>
           </div>
           <!-- end of single item -->
@@ -1103,8 +1096,7 @@
           <div class="content active" id="vision">
             <h4>Vision</h4>
             <p>
-              To be the strongest humanistic connection, recruitment, and communication platform that seamlessly brings
-              the right people together.
+              To be the most valued connection, staffing, and communication platform, seamlessly bringing the right people together.
             </p>
             <!-- <ul>
               <li>list item</li>
@@ -1117,7 +1109,7 @@
           <div class="content" id="goals" style="display: none">
             <h4>Goal</h4>
             <p>
-              To bring the professional startline to more humans and give companies the chance to find their people.
+              Our goal is to bring the professional startline to more humans and give companies the chance to find their people.
             </p>
           </div>
           <!-- end of single item -->
@@ -1640,7 +1632,7 @@
         <a href="privacy.html" style="margin-bottom: 15px;">Privacy Statement</a>
         <a href="terms.html" style="margin-bottom: 15px;">Terms Of Use</a>
         <a href="accessibility.html" style="margin-bottom: 15px;">Accessibility Statement</a>
-        <a href="YS-Culture.pdf">Culture</a>
+        <a href="YS-Culture.html">Culture</a>
       </div>
     </div>
     <div class="footer-right">
@@ -1669,7 +1661,7 @@
           <li class="twitter"><a target="_blank" href="https://x.com/Y_Swipe"><i class="fa-brands fa-x-twitter"></i></a>
           </li>
           <li class="facebook"><a target="_blank" href="3"><i class="fa-brands fa-facebook-f"></i></a></li>
-          <li class="moveLeft"><img class="makeSmall" src="assets/img/yswipe-gif.gif" /></li>
+          <li class="moveLeft" onclick="window.location.href='index.html'"><img class="makeSmall" src="assets/img/yswipe-gif.gif" /></li>
         </ul>
 
         <p style="line-height: 1.8em;
@@ -1863,9 +1855,9 @@
       document.getElementById('philosophyPdfLink').click();
     });
 
-	<!-- document.getElementById('openCulturePdfBtn').addEventListener('click', function() { -->
-		< !--document.getElementById('culturePdfLink').click(); -->
-	< !-- }); -->
+	document.getElementById('openCulturePdfBtn').addEventListener('click', function() {
+		document.getElementById('culturePdfLink').click();
+		});
   </script>
 
   <script>
