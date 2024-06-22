@@ -1,7 +1,11 @@
 var videoelement = document.getElementById("videoelement");
 var localStreamConstraints = {
     audio: true,
-    video: { width: 1920, height: 1080 },
+    video: { 
+        width: 1920, 
+        height: 1080,
+        facingMode: "user" // Ensure the front camera is used
+    },
 };
 
 var mediarecorder;
@@ -14,7 +18,7 @@ if (videoelement) {
         .getUserMedia(localStreamConstraints)
         .then(gotStream)
         .catch(function (e) {
-            if (confirm("An error with camera occured:(" + e.name + ") Do you want to reload?")) {
+            if (confirm("An error with camera occurred:(" + e.name + ") Do you want to reload?")) {
                 location.reload();
             }
         });
