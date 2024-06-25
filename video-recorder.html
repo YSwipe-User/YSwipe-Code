@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="css\video-recorder.css">
+  <link rel="stylesheet" type="text/css" href="css/video-recorder.css">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,6 +19,8 @@
   <script src="https://kit.fontawesome.com/53e90ec8ae.js" crossorigin="anonymous"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.8/dist/ffmpeg.min.js"></script>
 
   <!-- #151515 in body background-color below -->
   <style>
@@ -49,12 +51,10 @@
       border-radius: 75px;
     }
 
-
     .smallVideoBorder {
       border: 1px solid black;
       border-radius: 50px;
     }
-
 
     /* Footer Area Start */
     footer {
@@ -63,21 +63,7 @@
       width: 100vw;
     }
 
-    < !-- footer {
-      -->< !-- background: #161E26;
-      -->< !-- text-align: center;
-      -->< !-- width: 100%;
-      -->< !-- min-height: 5%;
-      -->< !-- display: flex;
-      -->< !-- position: absolute;
-      -->< !-- margin: 30px 0 0 -10px;
-      -->< !-- padding: 10px;
-      -->< !-- color: white;
-      -->< !-- font-weight: bold;
-      -->< !--
-    }
-
-    -->.site-info {
+    .site-info {
       position: relative;
       padding: 30px 0;
     }
@@ -122,19 +108,19 @@
     }
 
     .social-icons-footer .facebook a:hover {
-	  border-color: #4867aa;
-	  color: #4867aa;
-	}
+      border-color: #4867aa;
+      color: #4867aa;
+    }
 
     .social-icons-footer .twitter a:hover {
       border-color: #1da1f2;
       color: #1da1f2;
     }
 
-	.social-icons-footer .linkedin a:hover {
-	  border-color: #0077b5;
-	  color: #0077b5;
-	}
+    .social-icons-footer .linkedin a:hover {
+      border-color: #0077b5;
+      color: #0077b5;
+    }
 
     .social-icons-footer .google a:hover {
       border-color: #ea4335;
@@ -229,14 +215,7 @@
       margin-bottom: 50px;
     }
 
-    
-	
-
-
-    /* ----- The actual Score Circle ----- */
-
-    /* Variables */
-
+    /* Rating Circle CSS */
     :root {
       --rating-size: 7rem;
       --bar-size: 1rem;
@@ -248,7 +227,6 @@
       --rating-color-bad: #e74c3c;
     }
 
-    /* Rating item */
     .rating {
       position: relative;
       display: flex;
@@ -256,18 +234,14 @@
       justify-content: center;
       border-radius: 100%;
       overflow: hidden;
-
       background: var(--rating-color-default);
       color: var(--rating-color-default);
       width: var(--rating-size);
       height: var(--rating-size);
-
-      /* Basic style for the text */
       font-size: calc(var(--rating-size) / 3);
       line-height: 1;
     }
 
-    /* Rating circle content */
     .rating span {
       position: relative;
       display: flex;
@@ -281,7 +255,6 @@
       align-self: center;
     }
 
-    /* Bar mask, creates an inner circle with the same color as thee background */
     .rating::after {
       content: "";
       position: absolute;
@@ -291,7 +264,6 @@
       z-index: 1;
     }
 
-    /* Bar background */
     .rating::before {
       content: "";
       position: absolute;
@@ -301,7 +273,6 @@
       z-index: -1;
     }
 
-    /* Classes to give different colors to ratings, based on their score */
     .rating.good {
       background: var(--rating-color-good);
       color: var(--rating-color-good);
@@ -316,8 +287,6 @@
       background: var(--rating-color-bad);
       color: var(--rating-color-bad);
     }
-
-
 
     .video_on_the_left {
       width: 75%;
@@ -336,22 +305,14 @@
     }
 
     .clearfix {
-      clear: both
+      clear: both;
     }
 
-
-
-
     @media (min-width: 320px) and (max-width: 320px) {
-
-      /* Your styles for devices with a width of 320px go here */
       .videoS {
         width: 100px;
-        /* Set the video width to 100% of its container */
         max-width: 800px;
-        /* Limit the maximum width for larger screens */
         height: auto;
-        /* Maintain aspect ratio */
       }
 
       .footer {
@@ -386,21 +347,13 @@
       .reduceSize {
         width: 25px;
       }
-
     }
 
-
-    /* Smartphones (portrait and landscape) */
     @media only screen and (min-device-width: 321px) and (max-device-width: 660px) {
-
-      /* Styles for smartphones */
       .videoS {
         width: 100px;
-        /* Set the video width to 100% of its container */
         max-width: 800px;
-        /* Limit the maximum width for larger screens */
         height: auto;
-        /* Maintain aspect ratio */
       }
 
       .buttonS {
@@ -443,27 +396,13 @@
       .reduceSize {
         width: 35px;
       }
-
-      < !-- .increaseSize {
-        -->< !-- width: 100px;
-        -->< !-- height: 100px;
-        -->< !--
-      }
-
-      -->
     }
 
-    /* Tablets (portrait and landscape) */
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
-      /* Styles for tablets */
       .videoS {
         width: 100px;
-        /* Set the video width to 100% of its container */
         max-width: 800px;
-        /* Limit the maximum width for larger screens */
         height: auto;
-        /* Maintain aspect ratio */
       }
 
       .buttonS {
@@ -489,38 +428,27 @@
       .displayRecordSmall {
         display: none;
       }
-
-    }
-	
-	
-	/* New 1100 to 1390 width sizes code */
-	@media screen and (min-device-width: 1100px) and (max-device-width: 1390px) {
-	
-	  .videoS {
-			width: 135px;
-		  }
-  
     }
 
-	
+    @media screen and (min-device-width: 1100px) and (max-device-width: 1390px) {
+      .videoS {
+        width: 135px;
+      }
+    }
 
-    /* Laptops and above */
     @media screen and (min-device-width: 1200px) {
-
-      /* Your styles go here */
       .moveRight {
         margin-left: 180px;
       }
+    }
 
+    #videoelement {
+        transform: scaleX(-1);
     }
   </style>
-
-
 </head>
 
 <body>
-
-
   <div class="score_on_the_right">
     <a href="index.html"><img width="100px" class="imgA1 reduceSize"
         src="assets/img/YSwipe-Clear-White-Logo-black-background.jpeg" alt="YSwipe" /></a>
@@ -559,41 +487,15 @@
         <li><a class="dropdown-item" href="#">Third Video</a></li>
       </ul>
     </div>
-
-    <!-- </br> -->
-    <!-- <div class="container text-center displayRecordSmall"> -->
-    <!-- <button type="button" id="recbutton" class="btn btn-primary buttRadius" onclick="recordStart();" ><i class="fa-solid fa-video"></i>&nbsp;</button> -->
-    <!-- <button type="button" id="stopbutton" class="btn btn-danger buttRadius" style="visibility: hidden;" onclick="recordStop();"><i class="fa-solid fa-video-slash"></i>&nbsp; Stop</button> -->
-    <!-- <button type="button" id="submitbutton" class="btn btn-success buttRadius" style="visibility: hidden;" onclick="submitRecording();"><i class="fa-solid fa-check"></i>&nbsp; Submit</button> -->
-    <!-- <p id="recMessage" style="float: right; font-family: 'Montserrat'; font-size: 14px; font-weight: bold; color: red; margin-top: 10px;"></p> -->
-    <!-- </div> -->
-
   </div>
 
   </br>
   </br>
 
-
   <div class="video_on_the_left">
-    <!-- In the video: style="max-width: 100%;height: auto;" -->
     <video autoplay playsinline webkit-playsinline muted class="videoBorder increaseSize" id="videoelement"
       style="max-width: 100%;height: auto;"></video>
   </div>
-
-
-  <!-- <div class="score_on_the_right">
-    <h6 style="font-family: 'Montserrat'; color:white;" class="ratingFontSize">Communication</h6>
-    <div class="rating ">87%</div>
-    </br>
-    <h6 style="font-family: 'Montserrat'; color:white;" class="ratingFontSize">Aptitude</h6>
-    <div class="rating ">66%</div>
-    </br>
-    <h6 style="font-family: 'Montserrat'; color: white;" class="ratingFontSize">Skills</h6>
-    <div class="rating ">58%</div>
-    </br>
-    <h6 style="font-family: 'Montserrat'; color: white;" class="ratingFontSize">Collaboration</h6>
-    <div class="rating ">75%</div>
-  </div> -->
 
   <div class="clearfix"></div>
 
@@ -612,11 +514,7 @@
   </br>
   </br>
 
-
-
-  <!-- <div class="container-fluid"> -->
   <footer class="footer-section container-fluid" style="background-color:black;">
-
     <div class="social-icons-footer">
       <ul>
         <li class="facebook"><a target="_blank" href="3"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -625,18 +523,10 @@
       </ul>
     </div>
 
-
-
     <div class="site-info">
       <p>YSwipe © <span id="currentYear"></span> <a href="" rel="nofollow"></a></p>
     </div>
-
-
-
-
   </footer>
-  <!-- </div>	 -->
-
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -646,34 +536,27 @@
   <script src="video-recorder.js"></script>
 
   <script>
-
     let recordingStarted = false;
 
     function recordStart() {
-      // Your recording logic here
-      // For demonstration purposes, let's assume recording started successfully
       recordingStarted = true;
       document.getElementById("recbutton").style.visibility = "hidden";
       document.getElementById("stopbutton").style.visibility = "visible";
       document.getElementById("recMessage").innerText = "Recording started ...";
-      document.getElementById("submitbutton").style.visibility = "hidden"; // Hide submit button
+      document.getElementById("submitbutton").style.visibility = "hidden";
     }
 
     function recordStop() {
       if (recordingStarted) {
-        // Your stop recording logic here
-        // For demonstration purposes, let's assume recording stopped successfully
         document.getElementById("recbutton").style.visibility = "visible";
         document.getElementById("stopbutton").style.visibility = "hidden";
         document.getElementById("recMessage").innerText = "Recording stopped!";
-        document.getElementById("submitbutton").style.visibility = "visible"; // Show submit button
+        document.getElementById("submitbutton").style.visibility = "visible";
         recordingStarted = false;
 
-        // Hide the message after 2 seconds
         setTimeout(function () {
           document.getElementById("recMessage").innerText = "";
         }, 2000);
-
       } else {
         document.getElementById("recMessage").innerText = "Recording not started!";
       }
@@ -684,47 +567,34 @@
       document.getElementById("submitbutton").style.visibility = "hidden";
     }
 
-  </script>
-
-  <script>
-    // Find al rating items
-    const ratings = document.querySelectorAll(".rating");
-
-    // Iterate over all rating items
-    ratings.forEach((rating) => {
-      // Get content and get score as an int
-      const ratingContent = rating.innerHTML;
-      const ratingScore = parseInt(ratingContent, 10);
-
-      // Define if the score is good, meh or bad according to its value
-      const scoreClass =
-        ratingScore < 40 ? "bad" : ratingScore < 60 ? "meh" : "good";
-
-      // Add score class to the rating
-      rating.classList.add(scoreClass);
-
-      // After adding the class, get its color
-      const ratingColor = window.getComputedStyle(rating).backgroundColor;
-
-      // Define the background gradient according to the score and color
-      const gradient = `background: conic-gradient(${ratingColor} ${ratingScore}%, transparent 0 100%)`;
-
-      // Set the gradient as the rating background
-      rating.setAttribute("style", gradient);
-
-      // Wrap the content in a tag to show it above the pseudo element that masks the bar
-      rating.innerHTML = `<span>${ratingScore} ${ratingContent.indexOf("%") >= 0 ? "<small>%</small>" : ""
-        }</span>`;
-    });
-  </script>
-
-  <script>
     document.addEventListener('DOMContentLoaded', function () {
       var currentYear = new Date().getFullYear();
       document.getElementById('currentYear').textContent = currentYear;
     });
   </script>
 
-</body>
+  <script>
+    const ratings = document.querySelectorAll(".rating");
 
+    ratings.forEach((rating) => {
+      const ratingContent = rating.innerHTML;
+      const ratingScore = parseInt(ratingContent, 10);
+
+      const scoreClass =
+        ratingScore < 40 ? "bad" : ratingScore < 60 ? "meh" : "good";
+
+      rating.classList.add(scoreClass);
+
+      const ratingColor = window.getComputedStyle(rating).backgroundColor;
+
+      const gradient = `background: conic-gradient(${ratingColor} ${ratingScore}%, transparent 0 100%)`;
+
+      rating.setAttribute("style", gradient);
+
+      rating.innerHTML = `<span>${ratingScore} ${ratingContent.indexOf("%") >= 0 ? "<small>%</small>" : ""
+        }</span>`;
+    });
+  </script>
+
+</body>
 </html>
