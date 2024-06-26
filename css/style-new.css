@@ -656,3 +656,77 @@ footer {
 }
 
 
+
+
+/* The autocomplete dropdown in Business Location Start */
+.pac-container {
+	background-color: black !important; /* Background color */
+	color: blue !important; /* Text color */
+	font-family: 'Montserrat', sans-serif !important; /* Font family */
+	border-radius: 10px;
+}
+
+.pac-item {
+	background-color: black !important;
+	color: white !important;
+	font-family: 'Montserrat', sans-serif !important; /* Font family */
+}
+
+.pac-item:hover {
+	background-color: #212121 !important; /* Hover background color */
+}
+
+.pac-matched {
+	font-weight: bold !important; /* Highlight matched text */
+	color: white !important; /* Matched text color */
+	font-family: 'Montserrat', sans-serif !important; /* Font family */
+}
+
+.pac-item-selected {
+	color: white;  
+	font-family: 'Montserrat', sans-serif !important; /* Font family */
+}
+
+.pac-item-query {
+	color: white;
+	font-family: 'Montserrat', sans-serif !important; /* Font family */	
+}
+
+.pac-icon {
+	color: white;  
+}
+/* The autocomplete dropdown in Business Location End */
+
+
+
+@media (min-width: 1024px) {
+	.register_signup_nav {
+		margin-top: -400px;
+	}
+	
+	.register_signup_img {
+		width: 60%; 
+		margin-bottom: -100px; 
+		margin-left: 35px;
+	}
+
+	.register_signup_footer {
+		margin-top: -25px;
+	}
+}
+
+
+@media (min-width: 320px) and (max-width: 1023px) {
+	.register_signup_img {
+		width: 60%; 
+		/* margin-bottom: -100px;  */
+		margin-left: 35px;
+	}
+}
+
+
+@media (min-width: 320px) and (max-width: 320px) {
+	.register_signup_footer {
+		margin-top: 70px;
+	}
+}
