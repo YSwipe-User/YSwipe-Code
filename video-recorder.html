@@ -535,8 +535,10 @@
 
   <script src="video-recorder.js"></script>
 
+
   <script>
     let recordingStarted = false;
+    let recordingTimeout;
 
     function recordStart() {
       recordingStarted = true;
@@ -544,6 +546,11 @@
       document.getElementById("stopbutton").style.visibility = "visible";
       document.getElementById("recMessage").innerText = "Recording started ...";
       document.getElementById("submitbutton").style.visibility = "hidden";
+
+      // Set a timeout to automatically stop recording after 3 minutes (180000 milliseconds)
+      recordingTimeout = setTimeout(() => {
+        document.getElementById("stopbutton").click(); // Simulate stop button press
+      }, 181000);
     }
 
     function recordStop() {
@@ -553,6 +560,9 @@
         document.getElementById("recMessage").innerText = "Recording stopped!";
         document.getElementById("submitbutton").style.visibility = "visible";
         recordingStarted = false;
+
+        // Clear the timeout to prevent multiple calls to recordStop
+        clearTimeout(recordingTimeout);
 
         setTimeout(function () {
           document.getElementById("recMessage").innerText = "";
@@ -571,7 +581,8 @@
       var currentYear = new Date().getFullYear();
       document.getElementById('currentYear').textContent = currentYear;
     });
-  </script>
+</script>
+
 
   <script>
     const ratings = document.querySelectorAll(".rating");
