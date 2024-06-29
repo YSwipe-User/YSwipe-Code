@@ -500,6 +500,9 @@
   <div class="clearfix"></div>
 
   <div class="container text-center divUp moveRight">
+    <p id="recMessageLeft"
+      style="float: left; font-family: 'Montserrat'; font-size: 14px; font-weight: bold; color: white; margin-top: 10px;">
+    </p>
     <button type="button" id="recbutton" class="btn btn-light buttRadius" onclick="recordStart();"><i
         class="fa-solid fa-video"></i>&nbsp; Record</button>
     <button type="button" id="stopbutton" class="btn btn-danger buttRadius" style="visibility: hidden;"
@@ -545,6 +548,7 @@
       document.getElementById("recbutton").style.visibility = "hidden";
       document.getElementById("stopbutton").style.visibility = "visible";
       document.getElementById("recMessage").innerText = "Recording started ...";
+      document.getElementById("recMessageLeft").innerText = "You have 3 minutes, Good luck!";
       document.getElementById("submitbutton").style.visibility = "hidden";
 
       // Set a timeout to automatically stop recording after 3 minutes (180000 milliseconds)
@@ -558,6 +562,7 @@
         document.getElementById("recbutton").style.visibility = "visible";
         document.getElementById("stopbutton").style.visibility = "hidden";
         document.getElementById("recMessage").innerText = "Recording stopped!";
+        document.getElementById("recMessageLeft").innerText = "";
         document.getElementById("submitbutton").style.visibility = "visible";
         recordingStarted = false;
 
@@ -566,9 +571,11 @@
 
         setTimeout(function () {
           document.getElementById("recMessage").innerText = "";
+          document.getElementById("recMessageLeft").innerText = "";
         }, 2000);
       } else {
         document.getElementById("recMessage").innerText = "Recording not started!";
+        document.getElementById("recMessageLeft").innerText = "";
       }
     }
 
@@ -581,7 +588,7 @@
       var currentYear = new Date().getFullYear();
       document.getElementById('currentYear').textContent = currentYear;
     });
-</script>
+  </script>
 
 
   <script>
